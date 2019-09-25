@@ -39,9 +39,9 @@
             // 
             // tbIdentifiant
             // 
-            this.tbIdentifiant.Location = new System.Drawing.Point(135, 22);
+            this.tbIdentifiant.Location = new System.Drawing.Point(129, 22);
             this.tbIdentifiant.Name = "tbIdentifiant";
-            this.tbIdentifiant.Size = new System.Drawing.Size(187, 26);
+            this.tbIdentifiant.Size = new System.Drawing.Size(294, 26);
             this.tbIdentifiant.TabIndex = 0;
             // 
             // lblIdentifiant
@@ -64,24 +64,25 @@
             // 
             // tbMotDePasse
             // 
-            this.tbMotDePasse.Location = new System.Drawing.Point(135, 58);
+            this.tbMotDePasse.Location = new System.Drawing.Point(130, 58);
             this.tbMotDePasse.Name = "tbMotDePasse";
-            this.tbMotDePasse.Size = new System.Drawing.Size(187, 26);
+            this.tbMotDePasse.Size = new System.Drawing.Size(293, 26);
             this.tbMotDePasse.TabIndex = 3;
             // 
             // btnConnexion
             // 
-            this.btnConnexion.Location = new System.Drawing.Point(135, 90);
+            this.btnConnexion.Location = new System.Drawing.Point(129, 102);
             this.btnConnexion.Name = "btnConnexion";
-            this.btnConnexion.Size = new System.Drawing.Size(187, 26);
+            this.btnConnexion.Size = new System.Drawing.Size(294, 35);
             this.btnConnexion.TabIndex = 4;
             this.btnConnexion.Text = "connexion";
             this.btnConnexion.UseVisualStyleBackColor = true;
+            this.btnConnexion.Click += new System.EventHandler(this.btnConnexion_Click);
             // 
             // lblCreerCompte
             // 
             this.lblCreerCompte.AutoSize = true;
-            this.lblCreerCompte.Location = new System.Drawing.Point(165, 147);
+            this.lblCreerCompte.Location = new System.Drawing.Point(126, 162);
             this.lblCreerCompte.Name = "lblCreerCompte";
             this.lblCreerCompte.Size = new System.Drawing.Size(124, 20);
             this.lblCreerCompte.TabIndex = 5;
@@ -90,7 +91,7 @@
             // lblMotDePasseOublie
             // 
             this.lblMotDePasseOublie.AutoSize = true;
-            this.lblMotDePasseOublie.Location = new System.Drawing.Point(148, 171);
+            this.lblMotDePasseOublie.Location = new System.Drawing.Point(126, 192);
             this.lblMotDePasseOublie.Name = "lblMotDePasseOublie";
             this.lblMotDePasseOublie.Size = new System.Drawing.Size(151, 20);
             this.lblMotDePasseOublie.TabIndex = 6;
@@ -100,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(448, 220);
+            this.ClientSize = new System.Drawing.Size(453, 235);
             this.Controls.Add(this.lblMotDePasseOublie);
             this.Controls.Add(this.lblCreerCompte);
             this.Controls.Add(this.btnConnexion);
@@ -108,8 +109,10 @@
             this.Controls.Add(this.lblMotDePasse);
             this.Controls.Add(this.lblIdentifiant);
             this.Controls.Add(this.tbIdentifiant);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmLogin";
-            this.Text = "FootManager - Idenfitication";
+            this.Text = "FootManager - Idenfication";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,16 +10,13 @@ using System.Windows.Forms;
 
 namespace FootManager
 {
-    public partial class FrmLogin : Form
+    public partial class FrmCreerCompte : Form
     {
-        public FrmLogin()
+        public FrmCreerCompte()
         {
             InitializeComponent();
         }
 
-        private void btnConnexion_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
