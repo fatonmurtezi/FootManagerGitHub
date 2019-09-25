@@ -21,5 +21,11 @@ namespace FootManager
         {
 
         }
+
+        private void lblCreerCompte_Click(object sender, EventArgs e)
+        {
+            FrmCreerCompte frmCreerCompte = new FrmCreerCompte();
+            frmCreerCompte.Show();
+        }
     }
 }

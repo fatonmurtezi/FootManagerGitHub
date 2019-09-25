@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace FootManager
 {
-    public partial class FrmCreerCompte : Form
+    public partial class FrmUtilisateur : Form
     {
-        public FrmCreerCompte()
+        public FrmUtilisateur()
         {
             InitializeComponent();
         }
-
-
     }
 }

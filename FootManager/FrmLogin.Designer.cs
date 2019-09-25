@@ -87,6 +87,7 @@
             this.lblCreerCompte.Size = new System.Drawing.Size(124, 20);
             this.lblCreerCompte.TabIndex = 5;
             this.lblCreerCompte.Text = "créer un compte";
+            this.lblCreerCompte.Click += new System.EventHandler(this.lblCreerCompte_Click);
             // 
             // lblMotDePasseOublie
             // 
