@@ -120,7 +120,7 @@
             // cParticipants
             // 
             this.cParticipants.Frozen = true;
-            this.cParticipants.HeaderText = "Participants";
+            this.cParticipants.HeaderText = "participants";
             this.cParticipants.MinimumWidth = 8;
             this.cParticipants.Name = "cParticipants";
             this.cParticipants.ReadOnly = true;
