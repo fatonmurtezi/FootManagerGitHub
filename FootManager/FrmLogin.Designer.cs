@@ -113,7 +113,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmLogin";
-            this.Text = "FootManager - Idenfication";
+            this.Text = "FootManager - Identification";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

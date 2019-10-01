@@ -27,5 +27,10 @@ namespace FootManager
             FrmCreerCompte frmCreerCompte = new FrmCreerCompte();
             frmCreerCompte.Show();
         }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
