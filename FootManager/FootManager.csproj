@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMatch.Designer.cs">
+      <DependentUpon>FrmMatch.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCreerCompte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCreerCompte.resx">
       <DependentUpon>FrmCreerCompte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMatch.resx">
+      <DependentUpon>FrmMatch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

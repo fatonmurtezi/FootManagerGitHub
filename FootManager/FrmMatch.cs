@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace FootManager
 {
-    public partial class FrmUtilisateur : Form
+    public partial class FrmMatch : Form
     {
-        public FrmUtilisateur()
+        public FrmMatch()
         {
             InitializeComponent();
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void btnRetour_Click(object sender, EventArgs e)
         {
 
         }
