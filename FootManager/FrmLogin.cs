@@ -19,7 +19,18 @@ namespace FootManager
 
         private void btnConnexion_Click(object sender, EventArgs e)
         {
-
+            if (tbIdentifiant.Text == "admin")
+            {
+                FrmAdministrateur frmAdministrateur = new FrmAdministrateur();
+                frmAdministrateur.Show();
+                this.Hide();
+            }
+            if(tbIdentifiant.Text == "user")
+            {
+                FrmUtilisateur frmUtilisateur = new FrmUtilisateur();
+                frmUtilisateur.Show();
+                this.Hide();
+            }
         }
 
         private void lblCreerCompte_Click(object sender, EventArgs e)
