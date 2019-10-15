@@ -79,7 +79,7 @@
             this.tpMatches.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tpMatches.Size = new System.Drawing.Size(665, 270);
             this.tpMatches.TabIndex = 0;
-            this.tpMatches.Text = "matches";
+            this.tpMatches.Text = "Matches";
             this.tpMatches.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // dataGridView1
@@ -120,9 +120,9 @@
             this.tpProfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tpProfil.Name = "tpProfil";
             this.tpProfil.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tpProfil.Size = new System.Drawing.Size(538, 270);
+            this.tpProfil.Size = new System.Drawing.Size(665, 270);
             this.tpProfil.TabIndex = 1;
-            this.tpProfil.Text = "profil";
+            this.tpProfil.Text = "Profil";
             this.tpProfil.Click += new System.EventHandler(this.tpProfil_Click);
             // 
             // lblStatutBDD
@@ -160,9 +160,9 @@
             this.btnModifier.Location = new System.Drawing.Point(421, 145);
             this.btnModifier.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnModifier.Name = "btnModifier";
-            this.btnModifier.Size = new System.Drawing.Size(85, 17);
+            this.btnModifier.Size = new System.Drawing.Size(85, 20);
             this.btnModifier.TabIndex = 10;
-            this.btnModifier.Text = "modifier";
+            this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
             // 
             // lblEmailBDD
@@ -200,9 +200,9 @@
             this.lblModifierMdp.Location = new System.Drawing.Point(14, 147);
             this.lblModifierMdp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblModifierMdp.Name = "lblModifierMdp";
-            this.lblModifierMdp.Size = new System.Drawing.Size(129, 13);
+            this.lblModifierMdp.Size = new System.Drawing.Size(130, 13);
             this.lblModifierMdp.TabIndex = 6;
-            this.lblModifierMdp.Text = "modifier son mot de passe";
+            this.lblModifierMdp.Text = "Modifier son mot de passe";
             // 
             // lblStatut
             // 
@@ -210,9 +210,9 @@
             this.lblStatut.Location = new System.Drawing.Point(14, 116);
             this.lblStatut.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStatut.Name = "lblStatut";
-            this.lblStatut.Size = new System.Drawing.Size(94, 13);
+            this.lblStatut.Size = new System.Drawing.Size(96, 13);
             this.lblStatut.TabIndex = 5;
-            this.lblStatut.Text = "statut du paiement";
+            this.lblStatut.Text = "Statut du paiement";
             // 
             // label5
             // 
@@ -229,9 +229,9 @@
             this.lblIban.Location = new System.Drawing.Point(14, 87);
             this.lblIban.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIban.Name = "lblIban";
-            this.lblIban.Size = new System.Drawing.Size(94, 13);
+            this.lblIban.Size = new System.Drawing.Size(95, 13);
             this.lblIban.TabIndex = 3;
-            this.lblIban.Text = "paiement via l\'iban";
+            this.lblIban.Text = "Paiement via l\'iban";
             // 
             // lblMontant
             // 
@@ -239,9 +239,9 @@
             this.lblMontant.Location = new System.Drawing.Point(14, 65);
             this.lblMontant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMontant.Name = "lblMontant";
-            this.lblMontant.Size = new System.Drawing.Size(119, 13);
+            this.lblMontant.Size = new System.Drawing.Size(120, 13);
             this.lblMontant.TabIndex = 2;
-            this.lblMontant.Text = "montant de la cotisation";
+            this.lblMontant.Text = "Montant de la cotisation";
             // 
             // lblEmail
             // 
@@ -249,9 +249,9 @@
             this.lblEmail.Location = new System.Drawing.Point(14, 43);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(31, 13);
+            this.lblEmail.Size = new System.Drawing.Size(32, 13);
             this.lblEmail.TabIndex = 1;
-            this.lblEmail.Text = "email";
+            this.lblEmail.Text = "Email";
             // 
             // lblIdentifiant
             // 
@@ -259,9 +259,9 @@
             this.lblIdentifiant.Location = new System.Drawing.Point(14, 22);
             this.lblIdentifiant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIdentifiant.Name = "lblIdentifiant";
-            this.lblIdentifiant.Size = new System.Drawing.Size(52, 13);
+            this.lblIdentifiant.Size = new System.Drawing.Size(53, 13);
             this.lblIdentifiant.TabIndex = 0;
-            this.lblIdentifiant.Text = "identifiant";
+            this.lblIdentifiant.Text = "Identifiant";
             // 
             // btnDeconnexion
             // 
@@ -270,40 +270,40 @@
             this.btnDeconnexion.Name = "btnDeconnexion";
             this.btnDeconnexion.Size = new System.Drawing.Size(129, 21);
             this.btnDeconnexion.TabIndex = 2;
-            this.btnDeconnexion.Text = "déconnexion";
+            this.btnDeconnexion.Text = "Déconnexion";
             this.btnDeconnexion.UseVisualStyleBackColor = true;
             // 
             // cAdresse
             // 
-            this.cAdresse.HeaderText = "adresse";
+            this.cAdresse.HeaderText = "Adresse";
             this.cAdresse.MinimumWidth = 8;
             this.cAdresse.Name = "cAdresse";
             this.cAdresse.Width = 205;
             // 
             // cDate
             // 
-            this.cDate.HeaderText = "date";
+            this.cDate.HeaderText = "Date";
             this.cDate.MinimumWidth = 8;
             this.cDate.Name = "cDate";
             this.cDate.Width = 140;
             // 
             // cHeure
             // 
-            this.cHeure.HeaderText = "heure";
+            this.cHeure.HeaderText = "Heure";
             this.cHeure.MinimumWidth = 8;
             this.cHeure.Name = "cHeure";
             this.cHeure.Width = 120;
             // 
             // cParticipants
             // 
-            this.cParticipants.HeaderText = "parcitipants";
+            this.cParticipants.HeaderText = "Participants";
             this.cParticipants.MinimumWidth = 8;
             this.cParticipants.Name = "cParticipants";
             this.cParticipants.Width = 80;
             // 
             // cInfos
             // 
-            this.cInfos.HeaderText = "infos";
+            this.cInfos.HeaderText = "Infos";
             this.cInfos.MinimumWidth = 8;
             this.cInfos.Name = "cInfos";
             this.cInfos.Width = 50;

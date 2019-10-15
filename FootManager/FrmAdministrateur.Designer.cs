@@ -41,22 +41,25 @@
             this.btnAjouter = new System.Windows.Forms.Button();
             this.tpMembres = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.tpCotisations = new System.Windows.Forms.TabPage();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnDeconnexion = new System.Windows.Forms.Button();
+            this.lblSaison = new System.Windows.Forms.Label();
+            this.lblMontant = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.cIdentifiant = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.tpCotisations = new System.Windows.Forms.TabPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.btnDeconnexion = new System.Windows.Forms.Button();
             this.cAdresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cBtn = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tcAdmin.SuspendLayout();
             this.tpMatches.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -64,7 +67,8 @@
             this.tpMembres.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tpCotisations.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcAdmin
@@ -90,7 +94,7 @@
             this.tpMatches.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tpMatches.Size = new System.Drawing.Size(646, 234);
             this.tpMatches.TabIndex = 0;
-            this.tpMatches.Text = "matches";
+            this.tpMatches.Text = "Matches";
             this.tpMatches.Click += new System.EventHandler(this.tpMatches_Click);
             // 
             // dataGridView1
@@ -125,7 +129,7 @@
             this.groupBox1.Size = new System.Drawing.Size(646, 54);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "ajouter un match";
+            this.groupBox1.Text = "Ajouter un match";
             // 
             // dtpHeure
             // 
@@ -142,9 +146,9 @@
             this.lblHeure.Location = new System.Drawing.Point(428, 14);
             this.lblHeure.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHeure.Name = "lblHeure";
-            this.lblHeure.Size = new System.Drawing.Size(34, 13);
+            this.lblHeure.Size = new System.Drawing.Size(36, 13);
             this.lblHeure.TabIndex = 7;
-            this.lblHeure.Text = "heure";
+            this.lblHeure.Text = "Heure";
             // 
             // tbAdresse
             // 
@@ -170,9 +174,9 @@
             this.lblDate.Location = new System.Drawing.Point(293, 14);
             this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(28, 13);
+            this.lblDate.Size = new System.Drawing.Size(30, 13);
             this.lblDate.TabIndex = 2;
-            this.lblDate.Text = "date";
+            this.lblDate.Text = "Date";
             // 
             // lblAdresse
             // 
@@ -180,9 +184,9 @@
             this.lblAdresse.Location = new System.Drawing.Point(2, 14);
             this.lblAdresse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAdresse.Name = "lblAdresse";
-            this.lblAdresse.Size = new System.Drawing.Size(44, 13);
+            this.lblAdresse.Size = new System.Drawing.Size(45, 13);
             this.lblAdresse.TabIndex = 1;
-            this.lblAdresse.Text = "adresse";
+            this.lblAdresse.Text = "Adresse";
             // 
             // btnAjouter
             // 
@@ -191,7 +195,7 @@
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(71, 32);
             this.btnAjouter.TabIndex = 0;
-            this.btnAjouter.Text = "ajouter";
+            this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
             this.btnAjouter.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -202,9 +206,9 @@
             this.tpMembres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tpMembres.Name = "tpMembres";
             this.tpMembres.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tpMembres.Size = new System.Drawing.Size(543, 234);
+            this.tpMembres.Size = new System.Drawing.Size(646, 234);
             this.tpMembres.TabIndex = 1;
-            this.tpMembres.Text = "membres";
+            this.tpMembres.Text = "Membres";
             this.tpMembres.UseVisualStyleBackColor = true;
             this.tpMembres.Click += new System.EventHandler(this.tabPage2_Click);
             // 
@@ -222,92 +226,22 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(545, 237);
+            this.dataGridView2.Size = new System.Drawing.Size(646, 237);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // cIdentifiant
-            // 
-            this.cIdentifiant.HeaderText = "identifiant";
-            this.cIdentifiant.MinimumWidth = 8;
-            this.cIdentifiant.Name = "cIdentifiant";
-            this.cIdentifiant.Width = 150;
-            // 
-            // cEmail
-            // 
-            this.cEmail.HeaderText = "email";
-            this.cEmail.MinimumWidth = 8;
-            this.cEmail.Name = "cEmail";
-            this.cEmail.Width = 170;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "paiement de la cotisation";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "rappel de paiement cotisation";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 230;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // tpCotisations
             // 
-            this.tpCotisations.Controls.Add(this.dataGridView3);
+            this.tpCotisations.Controls.Add(this.groupBox3);
+            this.tpCotisations.Controls.Add(this.groupBox2);
             this.tpCotisations.Location = new System.Drawing.Point(4, 22);
             this.tpCotisations.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tpCotisations.Name = "tpCotisations";
             this.tpCotisations.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tpCotisations.Size = new System.Drawing.Size(543, 234);
+            this.tpCotisations.Size = new System.Drawing.Size(646, 234);
             this.tpCotisations.TabIndex = 2;
-            this.tpCotisations.Text = "cotisations";
+            this.tpCotisations.Text = "Cotisations";
             this.tpCotisations.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7});
-            this.dataGridView3.Location = new System.Drawing.Point(4, 2);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 62;
-            this.dataGridView3.RowTemplate.Height = 28;
-            this.dataGridView3.Size = new System.Drawing.Size(537, 189);
-            this.dataGridView3.TabIndex = 0;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "saison";
-            this.Column4.MinimumWidth = 8;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 150;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "montant";
-            this.Column5.MinimumWidth = 8;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 150;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "date d\'échéance";
-            this.Column6.MinimumWidth = 8;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 150;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Column7";
-            this.Column7.MinimumWidth = 8;
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 150;
             // 
             // btnDeconnexion
             // 
@@ -316,13 +250,78 @@
             this.btnDeconnexion.Name = "btnDeconnexion";
             this.btnDeconnexion.Size = new System.Drawing.Size(97, 20);
             this.btnDeconnexion.TabIndex = 1;
-            this.btnDeconnexion.Text = "déconnexion";
+            this.btnDeconnexion.Text = "Déconnexion";
             this.btnDeconnexion.UseVisualStyleBackColor = true;
+            // 
+            // lblSaison
+            // 
+            this.lblSaison.AutoSize = true;
+            this.lblSaison.Location = new System.Drawing.Point(6, 16);
+            this.lblSaison.Name = "lblSaison";
+            this.lblSaison.Size = new System.Drawing.Size(39, 13);
+            this.lblSaison.TabIndex = 0;
+            this.lblSaison.Text = "Saison";
+            // 
+            // lblMontant
+            // 
+            this.lblMontant.AutoSize = true;
+            this.lblMontant.Location = new System.Drawing.Point(6, 43);
+            this.lblMontant.Name = "lblMontant";
+            this.lblMontant.Size = new System.Drawing.Size(185, 13);
+            this.lblMontant.TabIndex = 1;
+            this.lblMontant.Text = "Montant de la cotisation par personne";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(178, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Dernier délai pour payer la cotisation";
+            // 
+            // cIdentifiant
+            // 
+            this.cIdentifiant.Frozen = true;
+            this.cIdentifiant.HeaderText = "Identifiant";
+            this.cIdentifiant.MinimumWidth = 8;
+            this.cIdentifiant.Name = "cIdentifiant";
+            this.cIdentifiant.ReadOnly = true;
+            this.cIdentifiant.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.cIdentifiant.Width = 140;
+            // 
+            // cEmail
+            // 
+            this.cEmail.Frozen = true;
+            this.cEmail.HeaderText = "Email";
+            this.cEmail.MinimumWidth = 8;
+            this.cEmail.Name = "cEmail";
+            this.cEmail.ReadOnly = true;
+            this.cEmail.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.cEmail.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.Frozen = true;
+            this.Column2.HeaderText = "Paiement de la cotisation";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
+            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Rappel de paiement cotisation";
+            this.Column3.MinimumWidth = 8;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column3.Width = 150;
             // 
             // cAdresse
             // 
             this.cAdresse.Frozen = true;
-            this.cAdresse.HeaderText = "adresse";
+            this.cAdresse.HeaderText = "Adresse";
             this.cAdresse.MinimumWidth = 8;
             this.cAdresse.Name = "cAdresse";
             this.cAdresse.ReadOnly = true;
@@ -331,7 +330,7 @@
             // cDate
             // 
             this.cDate.Frozen = true;
-            this.cDate.HeaderText = "date";
+            this.cDate.HeaderText = "Date";
             this.cDate.MinimumWidth = 8;
             this.cDate.Name = "cDate";
             this.cDate.ReadOnly = true;
@@ -340,7 +339,7 @@
             // Column1
             // 
             this.Column1.Frozen = true;
-            this.Column1.HeaderText = "heure";
+            this.Column1.HeaderText = "Heure";
             this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
             this.Column1.Width = 140;
@@ -353,6 +352,57 @@
             this.cBtn.Name = "cBtn";
             this.cBtn.ReadOnly = true;
             this.cBtn.Width = 70;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Coordonnées bancaires - IBAN";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(166, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Coordonnées bancaires - Adresse";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(9, 42);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(150, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Coordonnées bancaires - Nom";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.lblSaison);
+            this.groupBox2.Controls.Add(this.lblMontant);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Location = new System.Drawing.Point(6, 5);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(402, 100);
+            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Location = new System.Drawing.Point(236, 123);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(402, 100);
+            this.groupBox3.TabIndex = 7;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
             // 
             // FrmAdministrateur
             // 
@@ -372,7 +422,10 @@
             this.tpMembres.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tpCotisations.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -394,19 +447,22 @@
         private System.Windows.Forms.DateTimePicker dtpHeure;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TabPage tpCotisations;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cIdentifiant;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cEmail;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewButtonColumn Column3;
         private System.Windows.Forms.Button btnDeconnexion;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn cAdresse;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewButtonColumn cBtn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cIdentifiant;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cEmail;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewButtonColumn Column3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblMontant;
+        private System.Windows.Forms.Label lblSaison;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

@@ -46,9 +46,9 @@
             this.lblAdresse.Location = new System.Drawing.Point(21, 32);
             this.lblAdresse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAdresse.Name = "lblAdresse";
-            this.lblAdresse.Size = new System.Drawing.Size(44, 13);
+            this.lblAdresse.Size = new System.Drawing.Size(45, 13);
             this.lblAdresse.TabIndex = 0;
-            this.lblAdresse.Text = "adresse";
+            this.lblAdresse.Text = "Adresse";
             // 
             // lblDate
             // 
@@ -56,9 +56,9 @@
             this.lblDate.Location = new System.Drawing.Point(21, 53);
             this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(28, 13);
+            this.lblDate.Size = new System.Drawing.Size(30, 13);
             this.lblDate.TabIndex = 1;
-            this.lblDate.Text = "date";
+            this.lblDate.Text = "Date";
             // 
             // lblHeure
             // 
@@ -66,9 +66,9 @@
             this.lblHeure.Location = new System.Drawing.Point(21, 73);
             this.lblHeure.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHeure.Name = "lblHeure";
-            this.lblHeure.Size = new System.Drawing.Size(34, 13);
+            this.lblHeure.Size = new System.Drawing.Size(36, 13);
             this.lblHeure.TabIndex = 2;
-            this.lblHeure.Text = "heure";
+            this.lblHeure.Text = "Heure";
             // 
             // lblNbParticipant
             // 
@@ -76,9 +76,9 @@
             this.lblNbParticipant.Location = new System.Drawing.Point(21, 97);
             this.lblNbParticipant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNbParticipant.Name = "lblNbParticipant";
-            this.lblNbParticipant.Size = new System.Drawing.Size(61, 13);
+            this.lblNbParticipant.Size = new System.Drawing.Size(62, 13);
             this.lblNbParticipant.TabIndex = 3;
-            this.lblNbParticipant.Text = "participants";
+            this.lblNbParticipant.Text = "Participants";
             // 
             // btnQuitterMatch
             // 
