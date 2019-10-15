@@ -32,31 +32,31 @@
             this.tpMatches = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpHeure = new System.Windows.Forms.DateTimePicker();
+            this.lblHeure = new System.Windows.Forms.Label();
             this.tbAdresse = new System.Windows.Forms.TextBox();
             this.dtpDate = new System.Windows.Forms.DateTimePicker();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblAdresse = new System.Windows.Forms.Label();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.tpMembres = new System.Windows.Forms.TabPage();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.lblHeure = new System.Windows.Forms.Label();
-            this.dtpHeure = new System.Windows.Forms.DateTimePicker();
-            this.cAdresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cBtn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.tpCotisations = new System.Windows.Forms.TabPage();
             this.cIdentifiant = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.btnDeconnexion = new System.Windows.Forms.Button();
+            this.tpCotisations = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnDeconnexion = new System.Windows.Forms.Button();
+            this.cAdresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cBtn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tcAdmin.SuspendLayout();
             this.tpMatches.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -72,10 +72,11 @@
             this.tcAdmin.Controls.Add(this.tpMatches);
             this.tcAdmin.Controls.Add(this.tpMembres);
             this.tcAdmin.Controls.Add(this.tpCotisations);
-            this.tcAdmin.Location = new System.Drawing.Point(3, 1);
+            this.tcAdmin.Location = new System.Drawing.Point(2, 1);
+            this.tcAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tcAdmin.Name = "tcAdmin";
             this.tcAdmin.SelectedIndex = 0;
-            this.tcAdmin.Size = new System.Drawing.Size(826, 400);
+            this.tcAdmin.Size = new System.Drawing.Size(654, 260);
             this.tcAdmin.TabIndex = 0;
             // 
             // tpMatches
@@ -83,10 +84,11 @@
             this.tpMatches.BackColor = System.Drawing.Color.White;
             this.tpMatches.Controls.Add(this.dataGridView1);
             this.tpMatches.Controls.Add(this.groupBox1);
-            this.tpMatches.Location = new System.Drawing.Point(4, 29);
+            this.tpMatches.Location = new System.Drawing.Point(4, 22);
+            this.tpMatches.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tpMatches.Name = "tpMatches";
-            this.tpMatches.Padding = new System.Windows.Forms.Padding(3);
-            this.tpMatches.Size = new System.Drawing.Size(818, 367);
+            this.tpMatches.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpMatches.Size = new System.Drawing.Size(646, 234);
             this.tpMatches.TabIndex = 0;
             this.tpMatches.Text = "matches";
             this.tpMatches.Click += new System.EventHandler(this.tpMatches_Click);
@@ -99,11 +101,12 @@
             this.cDate,
             this.Column1,
             this.cBtn});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 89);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 58);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(808, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(644, 172);
             this.dataGridView1.TabIndex = 1;
             // 
             // groupBox1
@@ -116,51 +119,77 @@
             this.groupBox1.Controls.Add(this.lblAdresse);
             this.groupBox1.Controls.Add(this.btnAjouter);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(811, 83);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(646, 54);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ajouter un match";
             // 
+            // dtpHeure
+            // 
+            this.dtpHeure.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHeure.Location = new System.Drawing.Point(431, 29);
+            this.dtpHeure.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpHeure.Name = "dtpHeure";
+            this.dtpHeure.Size = new System.Drawing.Size(101, 20);
+            this.dtpHeure.TabIndex = 8;
+            // 
+            // lblHeure
+            // 
+            this.lblHeure.AutoSize = true;
+            this.lblHeure.Location = new System.Drawing.Point(428, 14);
+            this.lblHeure.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHeure.Name = "lblHeure";
+            this.lblHeure.Size = new System.Drawing.Size(34, 13);
+            this.lblHeure.TabIndex = 7;
+            this.lblHeure.Text = "heure";
+            // 
             // tbAdresse
             // 
-            this.tbAdresse.Location = new System.Drawing.Point(7, 44);
+            this.tbAdresse.Location = new System.Drawing.Point(5, 29);
+            this.tbAdresse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbAdresse.Name = "tbAdresse";
-            this.tbAdresse.Size = new System.Drawing.Size(282, 26);
+            this.tbAdresse.Size = new System.Drawing.Size(270, 20);
             this.tbAdresse.TabIndex = 6;
             // 
             // dtpDate
             // 
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDate.Location = new System.Drawing.Point(323, 44);
+            this.dtpDate.Location = new System.Drawing.Point(296, 29);
+            this.dtpDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(172, 26);
+            this.dtpDate.Size = new System.Drawing.Size(116, 20);
             this.dtpDate.TabIndex = 5;
             this.dtpDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(319, 21);
+            this.lblDate.Location = new System.Drawing.Point(293, 14);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(41, 20);
+            this.lblDate.Size = new System.Drawing.Size(28, 13);
             this.lblDate.TabIndex = 2;
             this.lblDate.Text = "date";
             // 
             // lblAdresse
             // 
             this.lblAdresse.AutoSize = true;
-            this.lblAdresse.Location = new System.Drawing.Point(3, 21);
+            this.lblAdresse.Location = new System.Drawing.Point(2, 14);
+            this.lblAdresse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAdresse.Name = "lblAdresse";
-            this.lblAdresse.Size = new System.Drawing.Size(66, 20);
+            this.lblAdresse.Size = new System.Drawing.Size(44, 13);
             this.lblAdresse.TabIndex = 1;
             this.lblAdresse.Text = "adresse";
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(699, 21);
+            this.btnAjouter.Location = new System.Drawing.Point(573, 18);
+            this.btnAjouter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(106, 49);
+            this.btnAjouter.Size = new System.Drawing.Size(71, 32);
             this.btnAjouter.TabIndex = 0;
             this.btnAjouter.Text = "ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
@@ -169,66 +198,15 @@
             // tpMembres
             // 
             this.tpMembres.Controls.Add(this.dataGridView2);
-            this.tpMembres.Location = new System.Drawing.Point(4, 29);
+            this.tpMembres.Location = new System.Drawing.Point(4, 22);
+            this.tpMembres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tpMembres.Name = "tpMembres";
-            this.tpMembres.Padding = new System.Windows.Forms.Padding(3);
-            this.tpMembres.Size = new System.Drawing.Size(818, 367);
+            this.tpMembres.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpMembres.Size = new System.Drawing.Size(543, 234);
             this.tpMembres.TabIndex = 1;
             this.tpMembres.Text = "membres";
             this.tpMembres.UseVisualStyleBackColor = true;
             this.tpMembres.Click += new System.EventHandler(this.tabPage2_Click);
-            // 
-            // lblHeure
-            // 
-            this.lblHeure.AutoSize = true;
-            this.lblHeure.Location = new System.Drawing.Point(520, 21);
-            this.lblHeure.Name = "lblHeure";
-            this.lblHeure.Size = new System.Drawing.Size(50, 20);
-            this.lblHeure.TabIndex = 7;
-            this.lblHeure.Text = "heure";
-            // 
-            // dtpHeure
-            // 
-            this.dtpHeure.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpHeure.Location = new System.Drawing.Point(524, 44);
-            this.dtpHeure.Name = "dtpHeure";
-            this.dtpHeure.Size = new System.Drawing.Size(150, 26);
-            this.dtpHeure.TabIndex = 8;
-            // 
-            // cAdresse
-            // 
-            this.cAdresse.Frozen = true;
-            this.cAdresse.HeaderText = "adresse";
-            this.cAdresse.MinimumWidth = 8;
-            this.cAdresse.Name = "cAdresse";
-            this.cAdresse.ReadOnly = true;
-            this.cAdresse.Width = 290;
-            // 
-            // cDate
-            // 
-            this.cDate.Frozen = true;
-            this.cDate.HeaderText = "date";
-            this.cDate.MinimumWidth = 8;
-            this.cDate.Name = "cDate";
-            this.cDate.ReadOnly = true;
-            this.cDate.Width = 200;
-            // 
-            // Column1
-            // 
-            this.Column1.Frozen = true;
-            this.Column1.HeaderText = "heure";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
-            // 
-            // cBtn
-            // 
-            this.cBtn.Frozen = true;
-            this.cBtn.HeaderText = "Supprimer";
-            this.cBtn.MinimumWidth = 8;
-            this.cBtn.Name = "cBtn";
-            this.cBtn.ReadOnly = true;
-            this.cBtn.Width = 145;
             // 
             // dataGridView2
             // 
@@ -240,22 +218,12 @@
             this.Column2,
             this.Column3});
             this.dataGridView2.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(817, 365);
+            this.dataGridView2.Size = new System.Drawing.Size(545, 237);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // tpCotisations
-            // 
-            this.tpCotisations.Controls.Add(this.dataGridView3);
-            this.tpCotisations.Location = new System.Drawing.Point(4, 29);
-            this.tpCotisations.Name = "tpCotisations";
-            this.tpCotisations.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCotisations.Size = new System.Drawing.Size(818, 367);
-            this.tpCotisations.TabIndex = 2;
-            this.tpCotisations.Text = "cotisations";
-            this.tpCotisations.UseVisualStyleBackColor = true;
             // 
             // cIdentifiant
             // 
@@ -285,14 +253,17 @@
             this.Column3.Name = "Column3";
             this.Column3.Width = 230;
             // 
-            // btnDeconnexion
+            // tpCotisations
             // 
-            this.btnDeconnexion.Location = new System.Drawing.Point(336, 416);
-            this.btnDeconnexion.Name = "btnDeconnexion";
-            this.btnDeconnexion.Size = new System.Drawing.Size(145, 31);
-            this.btnDeconnexion.TabIndex = 1;
-            this.btnDeconnexion.Text = "déconnexion";
-            this.btnDeconnexion.UseVisualStyleBackColor = true;
+            this.tpCotisations.Controls.Add(this.dataGridView3);
+            this.tpCotisations.Location = new System.Drawing.Point(4, 22);
+            this.tpCotisations.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpCotisations.Name = "tpCotisations";
+            this.tpCotisations.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpCotisations.Size = new System.Drawing.Size(543, 234);
+            this.tpCotisations.TabIndex = 2;
+            this.tpCotisations.Text = "cotisations";
+            this.tpCotisations.UseVisualStyleBackColor = true;
             // 
             // dataGridView3
             // 
@@ -302,11 +273,12 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dataGridView3.Location = new System.Drawing.Point(6, 3);
+            this.dataGridView3.Location = new System.Drawing.Point(4, 2);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 62;
             this.dataGridView3.RowTemplate.Height = 28;
-            this.dataGridView3.Size = new System.Drawing.Size(806, 291);
+            this.dataGridView3.Size = new System.Drawing.Size(537, 189);
             this.dataGridView3.TabIndex = 0;
             // 
             // Column4
@@ -337,13 +309,59 @@
             this.Column7.Name = "Column7";
             this.Column7.Width = 150;
             // 
+            // btnDeconnexion
+            // 
+            this.btnDeconnexion.Location = new System.Drawing.Point(269, 270);
+            this.btnDeconnexion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeconnexion.Name = "btnDeconnexion";
+            this.btnDeconnexion.Size = new System.Drawing.Size(97, 20);
+            this.btnDeconnexion.TabIndex = 1;
+            this.btnDeconnexion.Text = "déconnexion";
+            this.btnDeconnexion.UseVisualStyleBackColor = true;
+            // 
+            // cAdresse
+            // 
+            this.cAdresse.Frozen = true;
+            this.cAdresse.HeaderText = "adresse";
+            this.cAdresse.MinimumWidth = 8;
+            this.cAdresse.Name = "cAdresse";
+            this.cAdresse.ReadOnly = true;
+            this.cAdresse.Width = 240;
+            // 
+            // cDate
+            // 
+            this.cDate.Frozen = true;
+            this.cDate.HeaderText = "date";
+            this.cDate.MinimumWidth = 8;
+            this.cDate.Name = "cDate";
+            this.cDate.ReadOnly = true;
+            this.cDate.Width = 130;
+            // 
+            // Column1
+            // 
+            this.Column1.Frozen = true;
+            this.Column1.HeaderText = "heure";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 140;
+            // 
+            // cBtn
+            // 
+            this.cBtn.Frozen = true;
+            this.cBtn.HeaderText = "Supprimer";
+            this.cBtn.MinimumWidth = 8;
+            this.cBtn.Name = "cBtn";
+            this.cBtn.ReadOnly = true;
+            this.cBtn.Width = 70;
+            // 
             // FrmAdministrateur
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 450);
+            this.ClientSize = new System.Drawing.Size(656, 292);
             this.Controls.Add(this.btnDeconnexion);
             this.Controls.Add(this.tcAdmin);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmAdministrateur";
             this.Text = "FootManager - Administrateur";
             this.tcAdmin.ResumeLayout(false);
@@ -374,10 +392,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblHeure;
         private System.Windows.Forms.DateTimePicker dtpHeure;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cAdresse;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewButtonColumn cBtn;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TabPage tpCotisations;
         private System.Windows.Forms.DataGridViewTextBoxColumn cIdentifiant;
@@ -390,5 +404,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cAdresse;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewButtonColumn cBtn;
     }
 }
