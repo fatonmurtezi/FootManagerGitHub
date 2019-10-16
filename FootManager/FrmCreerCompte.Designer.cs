@@ -43,100 +43,91 @@
             // lblIdentifiant
             // 
             this.lblIdentifiant.AutoSize = true;
-            this.lblIdentifiant.Location = new System.Drawing.Point(8, 14);
-            this.lblIdentifiant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblIdentifiant.Location = new System.Drawing.Point(12, 22);
             this.lblIdentifiant.Name = "lblIdentifiant";
-            this.lblIdentifiant.Size = new System.Drawing.Size(53, 13);
+            this.lblIdentifiant.Size = new System.Drawing.Size(80, 20);
             this.lblIdentifiant.TabIndex = 0;
             this.lblIdentifiant.Text = "Identifiant";
             // 
             // lblMotDePasse
             // 
             this.lblMotDePasse.AutoSize = true;
-            this.lblMotDePasse.Location = new System.Drawing.Point(8, 38);
-            this.lblMotDePasse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMotDePasse.Location = new System.Drawing.Point(12, 58);
             this.lblMotDePasse.Name = "lblMotDePasse";
-            this.lblMotDePasse.Size = new System.Drawing.Size(71, 13);
+            this.lblMotDePasse.Size = new System.Drawing.Size(105, 20);
             this.lblMotDePasse.TabIndex = 1;
             this.lblMotDePasse.Text = "Mot de passe";
             // 
             // lblConfirmerMotDePasse
             // 
             this.lblConfirmerMotDePasse.AutoSize = true;
-            this.lblConfirmerMotDePasse.Location = new System.Drawing.Point(8, 60);
-            this.lblConfirmerMotDePasse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblConfirmerMotDePasse.Location = new System.Drawing.Point(12, 92);
             this.lblConfirmerMotDePasse.Name = "lblConfirmerMotDePasse";
-            this.lblConfirmerMotDePasse.Size = new System.Drawing.Size(128, 13);
+            this.lblConfirmerMotDePasse.Size = new System.Drawing.Size(194, 20);
             this.lblConfirmerMotDePasse.TabIndex = 2;
             this.lblConfirmerMotDePasse.Text = "Confirmer le mot de passe";
             // 
             // tbIdentifiant
             // 
-            this.tbIdentifiant.Location = new System.Drawing.Point(145, 12);
-            this.tbIdentifiant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbIdentifiant.Location = new System.Drawing.Point(218, 18);
             this.tbIdentifiant.Name = "tbIdentifiant";
-            this.tbIdentifiant.Size = new System.Drawing.Size(196, 20);
+            this.tbIdentifiant.Size = new System.Drawing.Size(292, 26);
             this.tbIdentifiant.TabIndex = 4;
             // 
             // tbConfirmerMotDePasse
             // 
-            this.tbConfirmerMotDePasse.Location = new System.Drawing.Point(145, 58);
-            this.tbConfirmerMotDePasse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbConfirmerMotDePasse.Location = new System.Drawing.Point(218, 89);
             this.tbConfirmerMotDePasse.Name = "tbConfirmerMotDePasse";
-            this.tbConfirmerMotDePasse.Size = new System.Drawing.Size(196, 20);
+            this.tbConfirmerMotDePasse.Size = new System.Drawing.Size(292, 26);
             this.tbConfirmerMotDePasse.TabIndex = 6;
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(145, 79);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbEmail.Location = new System.Drawing.Point(218, 122);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(196, 20);
+            this.tbEmail.Size = new System.Drawing.Size(292, 26);
             this.tbEmail.TabIndex = 7;
             // 
             // btnCreerCompte
             // 
-            this.btnCreerCompte.Location = new System.Drawing.Point(145, 106);
-            this.btnCreerCompte.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCreerCompte.Location = new System.Drawing.Point(218, 163);
             this.btnCreerCompte.Name = "btnCreerCompte";
-            this.btnCreerCompte.Size = new System.Drawing.Size(195, 20);
+            this.btnCreerCompte.Size = new System.Drawing.Size(292, 31);
             this.btnCreerCompte.TabIndex = 8;
             this.btnCreerCompte.Text = "Créer un compte";
             this.btnCreerCompte.UseVisualStyleBackColor = true;
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(191, 138);
-            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAnnuler.Location = new System.Drawing.Point(286, 212);
             this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(101, 20);
+            this.btnAnnuler.Size = new System.Drawing.Size(152, 31);
             this.btnAnnuler.TabIndex = 9;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // tbMotDePasse
             // 
-            this.tbMotDePasse.Location = new System.Drawing.Point(145, 36);
-            this.tbMotDePasse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbMotDePasse.Location = new System.Drawing.Point(218, 55);
             this.tbMotDePasse.Name = "tbMotDePasse";
-            this.tbMotDePasse.Size = new System.Drawing.Size(196, 20);
+            this.tbMotDePasse.Size = new System.Drawing.Size(292, 26);
             this.tbMotDePasse.TabIndex = 10;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(8, 81);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Location = new System.Drawing.Point(12, 125);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmail.Size = new System.Drawing.Size(48, 20);
             this.lblEmail.TabIndex = 11;
             this.lblEmail.Text = "Email";
             // 
             // FrmCreerCompte
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 166);
+            this.ClientSize = new System.Drawing.Size(562, 255);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.tbMotDePasse);
             this.Controls.Add(this.btnAnnuler);
@@ -147,9 +138,9 @@
             this.Controls.Add(this.lblConfirmerMotDePasse);
             this.Controls.Add(this.lblMotDePasse);
             this.Controls.Add(this.lblIdentifiant);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmCreerCompte";
             this.Text = "FootManager - Créer un compte";
+            this.Load += new System.EventHandler(this.FrmCreerCompte_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

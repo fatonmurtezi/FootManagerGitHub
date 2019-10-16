@@ -17,6 +17,17 @@ namespace FootManager
             InitializeComponent();
         }
 
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            
+            frmLogin.Show();
+            this.Hide();
+        }
 
+        private void FrmCreerCompte_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

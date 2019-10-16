@@ -16,7 +16,10 @@ namespace FootManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLogin());
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Show();
+            Application.Run();
         }
+ 
     }
 }

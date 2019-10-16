@@ -31,5 +31,12 @@ namespace FootManager
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            FrmMatch frmMatch = new FrmMatch();
+            frmMatch.ShowDialog();
+
+        }
     }
 }

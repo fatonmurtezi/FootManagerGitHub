@@ -39,46 +39,41 @@
             // 
             // tbIdentifiant
             // 
-            this.tbIdentifiant.Location = new System.Drawing.Point(121, 14);
-            this.tbIdentifiant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbIdentifiant.Location = new System.Drawing.Point(182, 22);
             this.tbIdentifiant.Name = "tbIdentifiant";
-            this.tbIdentifiant.Size = new System.Drawing.Size(197, 20);
+            this.tbIdentifiant.Size = new System.Drawing.Size(294, 26);
             this.tbIdentifiant.TabIndex = 0;
             // 
             // lblIdentifiant
             // 
             this.lblIdentifiant.AutoSize = true;
-            this.lblIdentifiant.Location = new System.Drawing.Point(8, 16);
-            this.lblIdentifiant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblIdentifiant.Location = new System.Drawing.Point(12, 25);
             this.lblIdentifiant.Name = "lblIdentifiant";
-            this.lblIdentifiant.Size = new System.Drawing.Size(53, 13);
+            this.lblIdentifiant.Size = new System.Drawing.Size(80, 20);
             this.lblIdentifiant.TabIndex = 1;
             this.lblIdentifiant.Text = "Identifiant";
             // 
             // lblMotDePasse
             // 
             this.lblMotDePasse.AutoSize = true;
-            this.lblMotDePasse.Location = new System.Drawing.Point(8, 38);
-            this.lblMotDePasse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMotDePasse.Location = new System.Drawing.Point(12, 58);
             this.lblMotDePasse.Name = "lblMotDePasse";
-            this.lblMotDePasse.Size = new System.Drawing.Size(71, 13);
+            this.lblMotDePasse.Size = new System.Drawing.Size(105, 20);
             this.lblMotDePasse.TabIndex = 2;
             this.lblMotDePasse.Text = "Mot de passe";
             // 
             // tbMotDePasse
             // 
-            this.tbMotDePasse.Location = new System.Drawing.Point(121, 36);
-            this.tbMotDePasse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbMotDePasse.Location = new System.Drawing.Point(182, 55);
             this.tbMotDePasse.Name = "tbMotDePasse";
-            this.tbMotDePasse.Size = new System.Drawing.Size(197, 20);
+            this.tbMotDePasse.Size = new System.Drawing.Size(294, 26);
             this.tbMotDePasse.TabIndex = 3;
             // 
             // btnConnexion
             // 
-            this.btnConnexion.Location = new System.Drawing.Point(121, 67);
-            this.btnConnexion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConnexion.Location = new System.Drawing.Point(182, 103);
             this.btnConnexion.Name = "btnConnexion";
-            this.btnConnexion.Size = new System.Drawing.Size(196, 23);
+            this.btnConnexion.Size = new System.Drawing.Size(294, 35);
             this.btnConnexion.TabIndex = 4;
             this.btnConnexion.Text = "Connexion";
             this.btnConnexion.UseVisualStyleBackColor = true;
@@ -87,30 +82,29 @@
             // llblCreerCompte
             // 
             this.llblCreerCompte.AutoSize = true;
-            this.llblCreerCompte.Location = new System.Drawing.Point(119, 128);
-            this.llblCreerCompte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llblCreerCompte.Location = new System.Drawing.Point(178, 197);
             this.llblCreerCompte.Name = "llblCreerCompte";
-            this.llblCreerCompte.Size = new System.Drawing.Size(85, 13);
+            this.llblCreerCompte.Size = new System.Drawing.Size(127, 20);
             this.llblCreerCompte.TabIndex = 7;
             this.llblCreerCompte.TabStop = true;
             this.llblCreerCompte.Text = "Créer un compte";
+            this.llblCreerCompte.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblCreerCompte_LinkClicked);
             // 
             // llblMotDePasseOublie
             // 
             this.llblMotDePasseOublie.AutoSize = true;
-            this.llblMotDePasseOublie.Location = new System.Drawing.Point(119, 148);
-            this.llblMotDePasseOublie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.llblMotDePasseOublie.Location = new System.Drawing.Point(178, 228);
             this.llblMotDePasseOublie.Name = "llblMotDePasseOublie";
-            this.llblMotDePasseOublie.Size = new System.Drawing.Size(102, 13);
+            this.llblMotDePasseOublie.Size = new System.Drawing.Size(151, 20);
             this.llblMotDePasseOublie.TabIndex = 8;
             this.llblMotDePasseOublie.TabStop = true;
             this.llblMotDePasseOublie.Text = "Mot de passe oublié";
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 187);
+            this.ClientSize = new System.Drawing.Size(556, 288);
             this.Controls.Add(this.llblMotDePasseOublie);
             this.Controls.Add(this.llblCreerCompte);
             this.Controls.Add(this.btnConnexion);
@@ -118,7 +112,6 @@
             this.Controls.Add(this.lblMotDePasse);
             this.Controls.Add(this.lblIdentifiant);
             this.Controls.Add(this.tbIdentifiant);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmLogin";

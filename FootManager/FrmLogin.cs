@@ -43,5 +43,15 @@ namespace FootManager
         {
 
         }
+
+
+        private void llblCreerCompte_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmCreerCompte frmCreerCompte = new FrmCreerCompte();
+            frmCreerCompte.Show();
+            this.Close();
+        }
+
+        
     }
 }

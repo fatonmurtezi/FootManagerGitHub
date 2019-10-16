@@ -50,23 +50,23 @@
             this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tpCotisations = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblSaison = new System.Windows.Forms.Label();
             this.lblMontant = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnDeconnexion = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.tcAdmin.SuspendLayout();
             this.tpMatches.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -96,7 +96,7 @@
             this.tpMatches.Controls.Add(this.groupBox1);
             this.tpMatches.Location = new System.Drawing.Point(4, 29);
             this.tpMatches.Name = "tpMatches";
-            this.tpMatches.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tpMatches.Padding = new System.Windows.Forms.Padding(3);
             this.tpMatches.Size = new System.Drawing.Size(973, 367);
             this.tpMatches.TabIndex = 0;
             this.tpMatches.Text = "Matches";
@@ -234,7 +234,7 @@
             this.tpMembres.Controls.Add(this.dataGridView2);
             this.tpMembres.Location = new System.Drawing.Point(4, 29);
             this.tpMembres.Name = "tpMembres";
-            this.tpMembres.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tpMembres.Padding = new System.Windows.Forms.Padding(3);
             this.tpMembres.Size = new System.Drawing.Size(973, 367);
             this.tpMembres.TabIndex = 1;
             this.tpMembres.Text = "Membres";
@@ -303,12 +303,22 @@
             this.tpCotisations.Controls.Add(this.groupBox2);
             this.tpCotisations.Location = new System.Drawing.Point(4, 29);
             this.tpCotisations.Name = "tpCotisations";
-            this.tpCotisations.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tpCotisations.Padding = new System.Windows.Forms.Padding(3);
             this.tpCotisations.Size = new System.Drawing.Size(973, 367);
             this.tpCotisations.TabIndex = 2;
             this.tpCotisations.Text = "Cotisations";
             this.tpCotisations.UseVisualStyleBackColor = true;
             this.tpCotisations.Click += new System.EventHandler(this.tpCotisations_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(397, 312);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 31);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Modifier";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // groupBox3
             // 
@@ -327,6 +337,28 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Informations bancaires";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(299, 79);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(575, 26);
+            this.textBox6.TabIndex = 8;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(299, 50);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(575, 26);
+            this.textBox5.TabIndex = 7;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(299, 19);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(575, 26);
+            this.textBox4.TabIndex = 6;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label1
             // 
@@ -376,6 +408,28 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informations de la saison";
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(299, 94);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(575, 26);
+            this.textBox3.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(299, 62);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(575, 26);
+            this.textBox2.TabIndex = 4;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(299, 30);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(575, 26);
+            this.textBox1.TabIndex = 3;
+            // 
             // lblSaison
             // 
             this.lblSaison.AutoSize = true;
@@ -414,60 +468,6 @@
             this.btnDeconnexion.TabIndex = 1;
             this.btnDeconnexion.Text = "Déconnexion";
             this.btnDeconnexion.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(397, 312);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 31);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Modifier";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(299, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(299, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(299, 94);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 26);
-            this.textBox3.TabIndex = 5;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(299, 19);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 26);
-            this.textBox4.TabIndex = 6;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(299, 50);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 26);
-            this.textBox5.TabIndex = 7;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(299, 79);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 26);
-            this.textBox6.TabIndex = 8;
             // 
             // FrmAdministrateur
             // 
