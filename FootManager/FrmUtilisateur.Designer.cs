@@ -299,6 +299,8 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "FrmUtilisateur";
             this.Text = "FrmUtilisateur";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmUtilisateur_FormClosing);
+            this.Load += new System.EventHandler(this.FrmUtilisateur_Load);
             this.tabControl1.ResumeLayout(false);
             this.tpMatches.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

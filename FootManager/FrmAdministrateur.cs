@@ -12,8 +12,10 @@ namespace FootManager
 {
     public partial class FrmAdministrateur : Form
     {
-        public FrmAdministrateur()
+        private FrmLogin frmLogin;
+        public FrmAdministrateur(FrmLogin frmLogin)
         {
+            this.frmLogin = frmLogin;
             InitializeComponent();
         }
 
@@ -76,6 +78,11 @@ namespace FootManager
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void FrmAdministrateur_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmLogin.Dispose();
         }
     }
 }

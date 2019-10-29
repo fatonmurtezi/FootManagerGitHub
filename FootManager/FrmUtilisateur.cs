@@ -12,8 +12,10 @@ namespace FootManager
 {
     public partial class FrmUtilisateur : Form
     {
-        public FrmUtilisateur()
+        private FrmLogin frmLogin;
+        public FrmUtilisateur(FrmLogin frmLogin)
         {
+            this.frmLogin = frmLogin;
             InitializeComponent();
         }
 
@@ -37,6 +39,16 @@ namespace FootManager
             FrmMatch frmMatch = new FrmMatch();
             frmMatch.ShowDialog();
 
+        }
+
+        private void FrmUtilisateur_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmUtilisateur_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmLogin.Dispose();
         }
     }
 }

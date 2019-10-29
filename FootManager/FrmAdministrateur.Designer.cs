@@ -478,6 +478,7 @@
             this.Controls.Add(this.tcAdmin);
             this.Name = "FrmAdministrateur";
             this.Text = "FootManager - Administrateur";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmAdministrateur_FormClosing);
             this.tcAdmin.ResumeLayout(false);
             this.tpMatches.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

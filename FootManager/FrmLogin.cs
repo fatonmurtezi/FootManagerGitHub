@@ -21,13 +21,13 @@ namespace FootManager
         {
             if (tbIdentifiant.Text == "admin")
             {
-                FrmAdministrateur frmAdministrateur = new FrmAdministrateur();
+                FrmAdministrateur frmAdministrateur = new FrmAdministrateur(this);
                 frmAdministrateur.Show();
                 this.Hide();
             }
             if(tbIdentifiant.Text == "user")
             {
-                FrmUtilisateur frmUtilisateur = new FrmUtilisateur();
+                FrmUtilisateur frmUtilisateur = new FrmUtilisateur(this);
                 frmUtilisateur.Show();
                 this.Hide();
             }
@@ -49,7 +49,7 @@ namespace FootManager
         {
             FrmCreerCompte frmCreerCompte = new FrmCreerCompte();
             frmCreerCompte.Show();
-            this.Close();
+            this.Hide();
         }
 
         
