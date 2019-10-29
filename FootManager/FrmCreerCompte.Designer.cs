@@ -96,6 +96,7 @@
             this.btnCreerCompte.TabIndex = 8;
             this.btnCreerCompte.Text = "Créer un compte";
             this.btnCreerCompte.UseVisualStyleBackColor = true;
+            this.btnCreerCompte.Click += new System.EventHandler(this.btnCreerCompte_Click);
             // 
             // btnAnnuler
             // 
@@ -140,6 +141,7 @@
             this.Controls.Add(this.lblIdentifiant);
             this.Name = "FrmCreerCompte";
             this.Text = "FootManager - Créer un compte";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCreerCompte_FormClosing);
             this.Load += new System.EventHandler(this.FrmCreerCompte_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

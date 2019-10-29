@@ -12,14 +12,15 @@ namespace FootManager
 {
     public partial class FrmCreerCompte : Form
     {
-        public FrmCreerCompte()
+        private FrmLogin frmLogin;
+        public FrmCreerCompte(FrmLogin frmLogin)
         {
+            this.frmLogin = frmLogin;
             InitializeComponent();
         }
 
         private void btnAnnuler_Click(object sender, EventArgs e)
         {
-            FrmLogin frmLogin = new FrmLogin();
             
             frmLogin.Show();
             this.Hide();
@@ -28,6 +29,25 @@ namespace FootManager
         private void FrmCreerCompte_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void FrmCreerCompte_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+            if(e.CloseReason == CloseReason.UserClosing)
+            {
+                frmLogin.Dispose();
+            }
+                
+        }
+
+        private void btnCreerCompte_Click(object sender, EventArgs e)
+        {
+            if (tbIdentifiant.Text == "")
+            {
+                System.Windows.Forms.MessageBox.Show("My message here");
+
+            }
         }
     }
 }

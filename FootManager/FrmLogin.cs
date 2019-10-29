@@ -35,7 +35,7 @@ namespace FootManager
 
         private void lblCreerCompte_Click(object sender, EventArgs e)
         {
-            FrmCreerCompte frmCreerCompte = new FrmCreerCompte();
+            FrmCreerCompte frmCreerCompte = new FrmCreerCompte(this);
             frmCreerCompte.Show();
         }
 
@@ -47,7 +47,7 @@ namespace FootManager
 
         private void llblCreerCompte_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FrmCreerCompte frmCreerCompte = new FrmCreerCompte();
+            FrmCreerCompte frmCreerCompte = new FrmCreerCompte(this);
             frmCreerCompte.Show();
             this.Hide();
         }
