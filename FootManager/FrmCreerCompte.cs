@@ -13,6 +13,19 @@ namespace FootManager
     public partial class FrmCreerCompte : Form
     {
         private FrmLogin frmLogin;
+        private bool pass;
+        bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
         public FrmCreerCompte(FrmLogin frmLogin)
         {
             this.frmLogin = frmLogin;
@@ -43,11 +56,34 @@ namespace FootManager
 
         private void btnCreerCompte_Click(object sender, EventArgs e)
         {
+            pass = true;
             if (tbIdentifiant.Text == "")
             {
-                System.Windows.Forms.MessageBox.Show("My message here");
+                System.Windows.Forms.MessageBox.Show("Identifiant vide");
+                pass = false;
+            }
 
+            if (!tbMotDePasse.Text.Equals(tbConfirmerMotDePasse)) {
+                System.Windows.Forms.MessageBox.Show("Mots de passe différents");
+
+                pass = false;
+            }
+
+
+
+            if (!IsValidEmail(tbEmail.Text)){
+                System.Windows.Forms.MessageBox.Show("email invalide");
+                pass = false;
+            }
+
+            if (pass == true)
+            {
+                System.Windows.Forms.MessageBox.Show("Créer le compte");
+                this.Hide();
+                frmLogin.Show();
             }
         }
+        
+
     }
 }

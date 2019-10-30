@@ -21,7 +21,7 @@ namespace FootManager
         {
             if (tbIdentifiant.Text == "admin")
             {
-                FrmAdministrateur frmAdministrateur = new FrmAdministrateur(this);
+                frmAdministrateur frmAdministrateur = new frmAdministrateur(this);
                 frmAdministrateur.Show();
                 this.Hide();
             }
