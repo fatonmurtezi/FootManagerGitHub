@@ -12,8 +12,8 @@ namespace FootManager
 {
     public partial class frmAdministrateur : Form
     {
-        private FrmLogin frmLogin;
-        public frmAdministrateur(FrmLogin frmLogin)
+        private frmLogin frmLogin;
+        public frmAdministrateur(frmLogin frmLogin)
         {
             this.frmLogin = frmLogin;
             InitializeComponent();

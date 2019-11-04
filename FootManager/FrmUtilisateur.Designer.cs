@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tcUtilisateur = new System.Windows.Forms.TabControl();
             this.tpMatches = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cAdresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cHeure = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cParticipants = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cInfos = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dtgUtilisateur = new System.Windows.Forms.DataGridView();
+            this.clmAdresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmHeure = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmParticipants = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmInfos = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tpProfil = new System.Windows.Forms.TabPage();
             this.lblStatutBDD = new System.Windows.Forms.Label();
             this.lblIbanBDD = new System.Windows.Forms.Label();
@@ -43,35 +43,34 @@
             this.btnModifier = new System.Windows.Forms.Button();
             this.lblEmailBDD = new System.Windows.Forms.Label();
             this.lblIdentifiantBDD = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtModifierMdp = new System.Windows.Forms.TextBox();
             this.lblModifierMdp = new System.Windows.Forms.Label();
             this.lblStatut = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.lblIban = new System.Windows.Forms.Label();
             this.lblMontant = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblIdentifiant = new System.Windows.Forms.Label();
             this.btnDeconnexion = new System.Windows.Forms.Button();
-            this.tabControl1.SuspendLayout();
+            this.tcUtilisateur.SuspendLayout();
             this.tpMatches.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgUtilisateur)).BeginInit();
             this.tpProfil.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tcUtilisateur
             // 
-            this.tabControl1.Controls.Add(this.tpMatches);
-            this.tabControl1.Controls.Add(this.tpProfil);
-            this.tabControl1.Location = new System.Drawing.Point(3, 6);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1010, 455);
-            this.tabControl1.TabIndex = 0;
+            this.tcUtilisateur.Controls.Add(this.tpMatches);
+            this.tcUtilisateur.Controls.Add(this.tpProfil);
+            this.tcUtilisateur.Location = new System.Drawing.Point(3, 6);
+            this.tcUtilisateur.Name = "tcUtilisateur";
+            this.tcUtilisateur.SelectedIndex = 0;
+            this.tcUtilisateur.Size = new System.Drawing.Size(1010, 455);
+            this.tcUtilisateur.TabIndex = 0;
             // 
             // tpMatches
             // 
             this.tpMatches.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.tpMatches.Controls.Add(this.dataGridView1);
+            this.tpMatches.Controls.Add(this.dtgUtilisateur);
             this.tpMatches.Location = new System.Drawing.Point(4, 29);
             this.tpMatches.Name = "tpMatches";
             this.tpMatches.Padding = new System.Windows.Forms.Padding(3);
@@ -80,57 +79,57 @@
             this.tpMatches.Text = "Matches";
             this.tpMatches.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // dataGridView1
+            // dtgUtilisateur
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cAdresse,
-            this.cDate,
-            this.cHeure,
-            this.cParticipants,
-            this.cInfos});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(990, 418);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dtgUtilisateur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgUtilisateur.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clmAdresse,
+            this.clmDate,
+            this.clmHeure,
+            this.clmParticipants,
+            this.clmInfos});
+            this.dtgUtilisateur.Location = new System.Drawing.Point(0, 0);
+            this.dtgUtilisateur.Name = "dtgUtilisateur";
+            this.dtgUtilisateur.RowHeadersWidth = 62;
+            this.dtgUtilisateur.RowTemplate.Height = 28;
+            this.dtgUtilisateur.Size = new System.Drawing.Size(990, 418);
+            this.dtgUtilisateur.TabIndex = 0;
+            this.dtgUtilisateur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // cAdresse
+            // clmAdresse
             // 
-            this.cAdresse.HeaderText = "Adresse";
-            this.cAdresse.MinimumWidth = 8;
-            this.cAdresse.Name = "cAdresse";
-            this.cAdresse.Width = 205;
+            this.clmAdresse.HeaderText = "Adresse";
+            this.clmAdresse.MinimumWidth = 8;
+            this.clmAdresse.Name = "clmAdresse";
+            this.clmAdresse.Width = 205;
             // 
-            // cDate
+            // clmDate
             // 
-            this.cDate.HeaderText = "Date";
-            this.cDate.MinimumWidth = 8;
-            this.cDate.Name = "cDate";
-            this.cDate.Width = 140;
+            this.clmDate.HeaderText = "Date";
+            this.clmDate.MinimumWidth = 8;
+            this.clmDate.Name = "clmDate";
+            this.clmDate.Width = 140;
             // 
-            // cHeure
+            // clmHeure
             // 
-            this.cHeure.HeaderText = "Heure";
-            this.cHeure.MinimumWidth = 8;
-            this.cHeure.Name = "cHeure";
-            this.cHeure.Width = 120;
+            this.clmHeure.HeaderText = "Heure";
+            this.clmHeure.MinimumWidth = 8;
+            this.clmHeure.Name = "clmHeure";
+            this.clmHeure.Width = 120;
             // 
-            // cParticipants
+            // clmParticipants
             // 
-            this.cParticipants.HeaderText = "Participants";
-            this.cParticipants.MinimumWidth = 8;
-            this.cParticipants.Name = "cParticipants";
-            this.cParticipants.Width = 80;
+            this.clmParticipants.HeaderText = "Participants";
+            this.clmParticipants.MinimumWidth = 8;
+            this.clmParticipants.Name = "clmParticipants";
+            this.clmParticipants.Width = 80;
             // 
-            // cInfos
+            // clmInfos
             // 
-            this.cInfos.HeaderText = "Infos";
-            this.cInfos.MinimumWidth = 8;
-            this.cInfos.Name = "cInfos";
-            this.cInfos.Width = 50;
+            this.clmInfos.HeaderText = "Infos";
+            this.clmInfos.MinimumWidth = 8;
+            this.clmInfos.Name = "clmInfos";
+            this.clmInfos.Width = 50;
             // 
             // tpProfil
             // 
@@ -141,10 +140,9 @@
             this.tpProfil.Controls.Add(this.btnModifier);
             this.tpProfil.Controls.Add(this.lblEmailBDD);
             this.tpProfil.Controls.Add(this.lblIdentifiantBDD);
-            this.tpProfil.Controls.Add(this.textBox1);
+            this.tpProfil.Controls.Add(this.txtModifierMdp);
             this.tpProfil.Controls.Add(this.lblModifierMdp);
             this.tpProfil.Controls.Add(this.lblStatut);
-            this.tpProfil.Controls.Add(this.label5);
             this.tpProfil.Controls.Add(this.lblIban);
             this.tpProfil.Controls.Add(this.lblMontant);
             this.tpProfil.Controls.Add(this.lblEmail);
@@ -189,7 +187,7 @@
             this.btnModifier.Location = new System.Drawing.Point(632, 223);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(128, 31);
-            this.btnModifier.TabIndex = 10;
+            this.btnModifier.TabIndex = 1;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
             // 
@@ -209,15 +207,15 @@
             this.lblIdentifiantBDD.Location = new System.Drawing.Point(254, 34);
             this.lblIdentifiantBDD.Name = "lblIdentifiantBDD";
             this.lblIdentifiantBDD.Size = new System.Drawing.Size(51, 20);
-            this.lblIdentifiantBDD.TabIndex = 8;
+            this.lblIdentifiantBDD.TabIndex = 0;
             this.lblIdentifiantBDD.Text = "label1";
             // 
-            // textBox1
+            // txtModifierMdp
             // 
-            this.textBox1.Location = new System.Drawing.Point(258, 223);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(336, 26);
-            this.textBox1.TabIndex = 7;
+            this.txtModifierMdp.Location = new System.Drawing.Point(258, 223);
+            this.txtModifierMdp.Name = "txtModifierMdp";
+            this.txtModifierMdp.Size = new System.Drawing.Size(336, 26);
+            this.txtModifierMdp.TabIndex = 0;
             // 
             // lblModifierMdp
             // 
@@ -236,14 +234,6 @@
             this.lblStatut.Size = new System.Drawing.Size(145, 20);
             this.lblStatut.TabIndex = 5;
             this.lblStatut.Text = "Statut du paiement";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 178);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 20);
-            this.label5.TabIndex = 4;
             // 
             // lblIban
             // 
@@ -286,7 +276,7 @@
             this.btnDeconnexion.Location = new System.Drawing.Point(392, 465);
             this.btnDeconnexion.Name = "btnDeconnexion";
             this.btnDeconnexion.Size = new System.Drawing.Size(194, 32);
-            this.btnDeconnexion.TabIndex = 2;
+            this.btnDeconnexion.TabIndex = 1;
             this.btnDeconnexion.Text = "Déconnexion";
             this.btnDeconnexion.UseVisualStyleBackColor = true;
             // 
@@ -296,14 +286,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1011, 498);
             this.Controls.Add(this.btnDeconnexion);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tcUtilisateur);
             this.Name = "FrmUtilisateur";
             this.Text = "FrmUtilisateur";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmUtilisateur_FormClosing);
             this.Load += new System.EventHandler(this.FrmUtilisateur_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.tcUtilisateur.ResumeLayout(false);
             this.tpMatches.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgUtilisateur)).EndInit();
             this.tpProfil.ResumeLayout(false);
             this.tpProfil.PerformLayout();
             this.ResumeLayout(false);
@@ -312,17 +302,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tcUtilisateur;
         private System.Windows.Forms.TabPage tpMatches;
         private System.Windows.Forms.TabPage tpProfil;
         private System.Windows.Forms.Button btnDeconnexion;
         private System.Windows.Forms.Label lblStatut;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblIban;
         private System.Windows.Forms.Label lblMontant;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblIdentifiant;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtModifierMdp;
         private System.Windows.Forms.Label lblModifierMdp;
         private System.Windows.Forms.Label lblEmailBDD;
         private System.Windows.Forms.Label lblIdentifiantBDD;
@@ -330,11 +319,11 @@
         private System.Windows.Forms.Label lblPaiementBDD;
         private System.Windows.Forms.Label lblStatutBDD;
         private System.Windows.Forms.Label lblIbanBDD;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cAdresse;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cHeure;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cParticipants;
-        private System.Windows.Forms.DataGridViewButtonColumn cInfos;
+        private System.Windows.Forms.DataGridView dtgUtilisateur;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmAdresse;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmHeure;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmParticipants;
+        private System.Windows.Forms.DataGridViewButtonColumn clmInfos;
     }
 }

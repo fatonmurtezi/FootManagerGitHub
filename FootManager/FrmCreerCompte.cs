@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FootManager
 {
-    public partial class FrmCreerCompte : Form
+    public partial class frmCreerCompte : Form
     {
-        private FrmLogin frmLogin;
+        private frmLogin frmLogin;
         private bool pass;
         bool IsValidEmail(string email)
         {
@@ -26,7 +26,7 @@ namespace FootManager
                 return false;
             }
         }
-        public FrmCreerCompte(FrmLogin frmLogin)
+        public frmCreerCompte(frmLogin frmLogin)
         {
             this.frmLogin = frmLogin;
             InitializeComponent();
@@ -57,13 +57,13 @@ namespace FootManager
         private void btnCreerCompte_Click(object sender, EventArgs e)
         {
             pass = true;
-            if (tbIdentifiant.Text == "")
+            if (txtIdentifiant.Text == "")
             {
                 System.Windows.Forms.MessageBox.Show("Identifiant vide");
                 pass = false;
             }
 
-            if (!tbMotDePasse.Text.Equals(tbConfirmerMotDePasse)) {
+            if (!txtMotDePasse.Text.Equals(txtConfirmerMotDePasse)) {
                 System.Windows.Forms.MessageBox.Show("Mots de passe différents");
 
                 pass = false;
@@ -71,7 +71,7 @@ namespace FootManager
 
 
 
-            if (!IsValidEmail(tbEmail.Text)){
+            if (!IsValidEmail(txtEmail.Text)){
                 System.Windows.Forms.MessageBox.Show("email invalide");
                 pass = false;
             }

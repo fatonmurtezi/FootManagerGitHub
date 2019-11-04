@@ -1,6 +1,6 @@
 ﻿namespace FootManager
 {
-    partial class FrmCreerCompte
+    partial class frmCreerCompte
     {
         /// <summary>
         /// Required designer variable.
@@ -31,12 +31,12 @@
             this.lblIdentifiant = new System.Windows.Forms.Label();
             this.lblMotDePasse = new System.Windows.Forms.Label();
             this.lblConfirmerMotDePasse = new System.Windows.Forms.Label();
-            this.tbIdentifiant = new System.Windows.Forms.TextBox();
-            this.tbConfirmerMotDePasse = new System.Windows.Forms.TextBox();
-            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.txtIdentifiant = new System.Windows.Forms.TextBox();
+            this.txtConfirmerMotDePasse = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnCreerCompte = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
-            this.tbMotDePasse = new System.Windows.Forms.TextBox();
+            this.txtMotDePasse = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -67,33 +67,33 @@
             this.lblConfirmerMotDePasse.TabIndex = 2;
             this.lblConfirmerMotDePasse.Text = "Confirmer le mot de passe";
             // 
-            // tbIdentifiant
+            // txtIdentifiant
             // 
-            this.tbIdentifiant.Location = new System.Drawing.Point(218, 18);
-            this.tbIdentifiant.Name = "tbIdentifiant";
-            this.tbIdentifiant.Size = new System.Drawing.Size(292, 26);
-            this.tbIdentifiant.TabIndex = 4;
+            this.txtIdentifiant.Location = new System.Drawing.Point(218, 18);
+            this.txtIdentifiant.Name = "txtIdentifiant";
+            this.txtIdentifiant.Size = new System.Drawing.Size(292, 26);
+            this.txtIdentifiant.TabIndex = 0;
             // 
-            // tbConfirmerMotDePasse
+            // txtConfirmerMotDePasse
             // 
-            this.tbConfirmerMotDePasse.Location = new System.Drawing.Point(218, 89);
-            this.tbConfirmerMotDePasse.Name = "tbConfirmerMotDePasse";
-            this.tbConfirmerMotDePasse.Size = new System.Drawing.Size(292, 26);
-            this.tbConfirmerMotDePasse.TabIndex = 6;
+            this.txtConfirmerMotDePasse.Location = new System.Drawing.Point(218, 89);
+            this.txtConfirmerMotDePasse.Name = "txtConfirmerMotDePasse";
+            this.txtConfirmerMotDePasse.Size = new System.Drawing.Size(292, 26);
+            this.txtConfirmerMotDePasse.TabIndex = 2;
             // 
-            // tbEmail
+            // txtEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(218, 122);
-            this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(292, 26);
-            this.tbEmail.TabIndex = 7;
+            this.txtEmail.Location = new System.Drawing.Point(218, 122);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(292, 26);
+            this.txtEmail.TabIndex = 3;
             // 
             // btnCreerCompte
             // 
             this.btnCreerCompte.Location = new System.Drawing.Point(218, 163);
             this.btnCreerCompte.Name = "btnCreerCompte";
             this.btnCreerCompte.Size = new System.Drawing.Size(292, 31);
-            this.btnCreerCompte.TabIndex = 8;
+            this.btnCreerCompte.TabIndex = 4;
             this.btnCreerCompte.Text = "Créer un compte";
             this.btnCreerCompte.UseVisualStyleBackColor = true;
             this.btnCreerCompte.Click += new System.EventHandler(this.btnCreerCompte_Click);
@@ -103,17 +103,17 @@
             this.btnAnnuler.Location = new System.Drawing.Point(286, 212);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(152, 31);
-            this.btnAnnuler.TabIndex = 9;
+            this.btnAnnuler.TabIndex = 5;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
             this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
-            // tbMotDePasse
+            // txtMotDePasse
             // 
-            this.tbMotDePasse.Location = new System.Drawing.Point(218, 55);
-            this.tbMotDePasse.Name = "tbMotDePasse";
-            this.tbMotDePasse.Size = new System.Drawing.Size(292, 26);
-            this.tbMotDePasse.TabIndex = 10;
+            this.txtMotDePasse.Location = new System.Drawing.Point(218, 55);
+            this.txtMotDePasse.Name = "txtMotDePasse";
+            this.txtMotDePasse.Size = new System.Drawing.Size(292, 26);
+            this.txtMotDePasse.TabIndex = 1;
             // 
             // lblEmail
             // 
@@ -124,22 +124,22 @@
             this.lblEmail.TabIndex = 11;
             this.lblEmail.Text = "Email";
             // 
-            // FrmCreerCompte
+            // frmCreerCompte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 255);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.tbMotDePasse);
+            this.Controls.Add(this.txtMotDePasse);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnCreerCompte);
-            this.Controls.Add(this.tbEmail);
-            this.Controls.Add(this.tbConfirmerMotDePasse);
-            this.Controls.Add(this.tbIdentifiant);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtConfirmerMotDePasse);
+            this.Controls.Add(this.txtIdentifiant);
             this.Controls.Add(this.lblConfirmerMotDePasse);
             this.Controls.Add(this.lblMotDePasse);
             this.Controls.Add(this.lblIdentifiant);
-            this.Name = "FrmCreerCompte";
+            this.Name = "frmCreerCompte";
             this.Text = "FootManager - Créer un compte";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCreerCompte_FormClosing);
             this.Load += new System.EventHandler(this.FrmCreerCompte_Load);
@@ -153,12 +153,12 @@
         private System.Windows.Forms.Label lblIdentifiant;
         private System.Windows.Forms.Label lblMotDePasse;
         private System.Windows.Forms.Label lblConfirmerMotDePasse;
-        private System.Windows.Forms.TextBox tbIdentifiant;
-        private System.Windows.Forms.TextBox tbConfirmerMotDePasse;
-        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox txtIdentifiant;
+        private System.Windows.Forms.TextBox txtConfirmerMotDePasse;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnCreerCompte;
         private System.Windows.Forms.Button btnAnnuler;
-        private System.Windows.Forms.TextBox tbMotDePasse;
+        private System.Windows.Forms.TextBox txtMotDePasse;
         private System.Windows.Forms.Label lblEmail;
     }
 }

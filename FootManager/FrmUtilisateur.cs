@@ -12,8 +12,8 @@ namespace FootManager
 {
     public partial class FrmUtilisateur : Form
     {
-        private FrmLogin frmLogin;
-        public FrmUtilisateur(FrmLogin frmLogin)
+        private frmLogin frmLogin;
+        public FrmUtilisateur(frmLogin frmLogin)
         {
             this.frmLogin = frmLogin;
             InitializeComponent();
@@ -36,7 +36,7 @@ namespace FootManager
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            FrmMatch frmMatch = new FrmMatch();
+            frmMatch frmMatch = new frmMatch();
             frmMatch.ShowDialog();
 
         }

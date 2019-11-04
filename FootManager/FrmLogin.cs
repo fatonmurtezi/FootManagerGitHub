@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FootManager
 {
-    public partial class FrmLogin : Form
+    public partial class frmLogin : Form
     {
-        public FrmLogin()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -35,7 +35,7 @@ namespace FootManager
 
         private void lblCreerCompte_Click(object sender, EventArgs e)
         {
-            FrmCreerCompte frmCreerCompte = new FrmCreerCompte(this);
+            frmCreerCompte frmCreerCompte = new frmCreerCompte(this);
             frmCreerCompte.Show();
         }
 
@@ -47,7 +47,7 @@ namespace FootManager
 
         private void llblCreerCompte_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FrmCreerCompte frmCreerCompte = new FrmCreerCompte(this);
+            frmCreerCompte frmCreerCompte = new frmCreerCompte(this);
             frmCreerCompte.Show();
             this.Hide();
         }

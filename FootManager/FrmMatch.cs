@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FootManager
 {
-    public partial class FrmMatch : Form
+    public partial class frmMatch : Form
     {
-        public FrmMatch()
+        public frmMatch()
         {
             InitializeComponent();
         }

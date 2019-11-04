@@ -173,7 +173,7 @@
             this.dtpHeure.Location = new System.Drawing.Point(646, 45);
             this.dtpHeure.Name = "dtpHeure";
             this.dtpHeure.Size = new System.Drawing.Size(150, 26);
-            this.dtpHeure.TabIndex = 8;
+            this.dtpHeure.TabIndex = 2;
             // 
             // lblHeure
             // 
@@ -189,7 +189,7 @@
             this.txtAdresse.Location = new System.Drawing.Point(8, 45);
             this.txtAdresse.Name = "txtAdresse";
             this.txtAdresse.Size = new System.Drawing.Size(403, 26);
-            this.txtAdresse.TabIndex = 6;
+            this.txtAdresse.TabIndex = 0;
             // 
             // dtpDate
             // 
@@ -197,7 +197,7 @@
             this.dtpDate.Location = new System.Drawing.Point(444, 45);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(172, 26);
-            this.dtpDate.TabIndex = 5;
+            this.dtpDate.TabIndex = 1;
             this.dtpDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // lblDate
@@ -223,7 +223,7 @@
             this.btnAjouter.Location = new System.Drawing.Point(860, 28);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(106, 49);
-            this.btnAjouter.TabIndex = 0;
+            this.btnAjouter.TabIndex = 3;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
             this.btnAjouter.Click += new System.EventHandler(this.button1_Click);
@@ -313,8 +313,8 @@
             this.btnModifier.Location = new System.Drawing.Point(397, 312);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(146, 31);
-            this.btnModifier.TabIndex = 8;
-            this.btnModifier.Text = "Modifier";
+            this.btnModifier.TabIndex = 2;
+            this.btnModifier.Text = "&Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
             this.btnModifier.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -331,7 +331,7 @@
             this.gbpInformationsBancaires.Name = "gbpInformationsBancaires";
             this.gbpInformationsBancaires.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbpInformationsBancaires.Size = new System.Drawing.Size(960, 121);
-            this.gbpInformationsBancaires.TabIndex = 7;
+            this.gbpInformationsBancaires.TabIndex = 1;
             this.gbpInformationsBancaires.TabStop = false;
             this.gbpInformationsBancaires.Text = "Informations bancaires";
             this.gbpInformationsBancaires.Enter += new System.EventHandler(this.groupBox3_Enter);
@@ -341,21 +341,21 @@
             this.txtAdresseCotisation.Location = new System.Drawing.Point(299, 79);
             this.txtAdresseCotisation.Name = "txtAdresseCotisation";
             this.txtAdresseCotisation.Size = new System.Drawing.Size(575, 26);
-            this.txtAdresseCotisation.TabIndex = 8;
+            this.txtAdresseCotisation.TabIndex = 2;
             // 
             // txtNom
             // 
             this.txtNom.Location = new System.Drawing.Point(299, 50);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(575, 26);
-            this.txtNom.TabIndex = 7;
+            this.txtNom.TabIndex = 1;
             // 
             // txtIban
             // 
             this.txtIban.Location = new System.Drawing.Point(299, 19);
             this.txtIban.Name = "txtIban";
             this.txtIban.Size = new System.Drawing.Size(575, 26);
-            this.txtIban.TabIndex = 6;
+            this.txtIban.TabIndex = 0;
             this.txtIban.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // lblIban
@@ -402,7 +402,7 @@
             this.gbpInformationsSaison.Name = "gbpInformationsSaison";
             this.gbpInformationsSaison.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbpInformationsSaison.Size = new System.Drawing.Size(960, 131);
-            this.gbpInformationsSaison.TabIndex = 6;
+            this.gbpInformationsSaison.TabIndex = 0;
             this.gbpInformationsSaison.TabStop = false;
             this.gbpInformationsSaison.Text = "Informations de la saison";
             // 
@@ -411,14 +411,14 @@
             this.txtDernierDelai.Location = new System.Drawing.Point(299, 94);
             this.txtDernierDelai.Name = "txtDernierDelai";
             this.txtDernierDelai.Size = new System.Drawing.Size(575, 26);
-            this.txtDernierDelai.TabIndex = 5;
+            this.txtDernierDelai.TabIndex = 2;
             // 
             // txtMontant
             // 
             this.txtMontant.Location = new System.Drawing.Point(299, 62);
             this.txtMontant.Name = "txtMontant";
             this.txtMontant.Size = new System.Drawing.Size(575, 26);
-            this.txtMontant.TabIndex = 4;
+            this.txtMontant.TabIndex = 1;
             this.txtMontant.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtSaison
@@ -426,7 +426,7 @@
             this.txtSaison.Location = new System.Drawing.Point(299, 30);
             this.txtSaison.Name = "txtSaison";
             this.txtSaison.Size = new System.Drawing.Size(575, 26);
-            this.txtSaison.TabIndex = 3;
+            this.txtSaison.TabIndex = 0;
             // 
             // lblSaison
             // 
@@ -436,7 +436,7 @@
             this.lblSaison.Name = "lblSaison";
             this.lblSaison.Size = new System.Drawing.Size(58, 20);
             this.lblSaison.TabIndex = 0;
-            this.lblSaison.Text = "Saison";
+            this.lblSaison.Text = "&Saison";
             // 
             // lblMontant
             // 
@@ -464,7 +464,7 @@
             this.btnDeconnexion.Name = "btnDeconnexion";
             this.btnDeconnexion.Size = new System.Drawing.Size(146, 31);
             this.btnDeconnexion.TabIndex = 1;
-            this.btnDeconnexion.Text = "Déconnexion";
+            this.btnDeconnexion.Text = "&Déconnexion";
             this.btnDeconnexion.UseVisualStyleBackColor = true;
             // 
             // frmAdministrateur

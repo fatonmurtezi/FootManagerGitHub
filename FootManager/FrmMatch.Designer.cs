@@ -1,6 +1,6 @@
 ﻿namespace FootManager
 {
-    partial class FrmMatch
+    partial class frmMatch
     {
         /// <summary>
         /// Required designer variable.
@@ -43,109 +43,99 @@
             // lblAdresse
             // 
             this.lblAdresse.AutoSize = true;
-            this.lblAdresse.Location = new System.Drawing.Point(21, 32);
-            this.lblAdresse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAdresse.Location = new System.Drawing.Point(32, 49);
             this.lblAdresse.Name = "lblAdresse";
-            this.lblAdresse.Size = new System.Drawing.Size(45, 13);
-            this.lblAdresse.TabIndex = 0;
+            this.lblAdresse.Size = new System.Drawing.Size(68, 20);
+            this.lblAdresse.TabIndex = 3;
             this.lblAdresse.Text = "Adresse";
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(21, 53);
-            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDate.Location = new System.Drawing.Point(32, 82);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(30, 13);
+            this.lblDate.Size = new System.Drawing.Size(44, 20);
             this.lblDate.TabIndex = 1;
             this.lblDate.Text = "Date";
             // 
             // lblHeure
             // 
             this.lblHeure.AutoSize = true;
-            this.lblHeure.Location = new System.Drawing.Point(21, 73);
-            this.lblHeure.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHeure.Location = new System.Drawing.Point(32, 112);
             this.lblHeure.Name = "lblHeure";
-            this.lblHeure.Size = new System.Drawing.Size(36, 13);
+            this.lblHeure.Size = new System.Drawing.Size(53, 20);
             this.lblHeure.TabIndex = 2;
             this.lblHeure.Text = "Heure";
             // 
             // lblNbParticipant
             // 
             this.lblNbParticipant.AutoSize = true;
-            this.lblNbParticipant.Location = new System.Drawing.Point(21, 97);
-            this.lblNbParticipant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNbParticipant.Location = new System.Drawing.Point(32, 149);
             this.lblNbParticipant.Name = "lblNbParticipant";
-            this.lblNbParticipant.Size = new System.Drawing.Size(62, 13);
+            this.lblNbParticipant.Size = new System.Drawing.Size(92, 20);
             this.lblNbParticipant.TabIndex = 3;
             this.lblNbParticipant.Text = "Participants";
             // 
             // btnQuitterMatch
             // 
-            this.btnQuitterMatch.Location = new System.Drawing.Point(23, 133);
-            this.btnQuitterMatch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQuitterMatch.Location = new System.Drawing.Point(34, 205);
             this.btnQuitterMatch.Name = "btnQuitterMatch";
-            this.btnQuitterMatch.Size = new System.Drawing.Size(91, 27);
-            this.btnQuitterMatch.TabIndex = 4;
-            this.btnQuitterMatch.Text = "Quitter le match";
+            this.btnQuitterMatch.Size = new System.Drawing.Size(136, 42);
+            this.btnQuitterMatch.TabIndex = 0;
+            this.btnQuitterMatch.Text = "&Rejoindre";
             this.btnQuitterMatch.UseVisualStyleBackColor = true;
             // 
             // lblAdresseBDD
             // 
             this.lblAdresseBDD.AutoSize = true;
-            this.lblAdresseBDD.Location = new System.Drawing.Point(119, 32);
-            this.lblAdresseBDD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAdresseBDD.Location = new System.Drawing.Point(178, 49);
             this.lblAdresseBDD.Name = "lblAdresseBDD";
-            this.lblAdresseBDD.Size = new System.Drawing.Size(44, 13);
+            this.lblAdresseBDD.Size = new System.Drawing.Size(66, 20);
             this.lblAdresseBDD.TabIndex = 5;
             this.lblAdresseBDD.Text = "adresse";
             // 
             // lblDateBDD
             // 
             this.lblDateBDD.AutoSize = true;
-            this.lblDateBDD.Location = new System.Drawing.Point(119, 53);
-            this.lblDateBDD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDateBDD.Location = new System.Drawing.Point(178, 82);
             this.lblDateBDD.Name = "lblDateBDD";
-            this.lblDateBDD.Size = new System.Drawing.Size(28, 13);
+            this.lblDateBDD.Size = new System.Drawing.Size(41, 20);
             this.lblDateBDD.TabIndex = 6;
             this.lblDateBDD.Text = "date";
             // 
             // lblHeureBDD
             // 
             this.lblHeureBDD.AutoSize = true;
-            this.lblHeureBDD.Location = new System.Drawing.Point(119, 73);
-            this.lblHeureBDD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHeureBDD.Location = new System.Drawing.Point(178, 112);
             this.lblHeureBDD.Name = "lblHeureBDD";
-            this.lblHeureBDD.Size = new System.Drawing.Size(34, 13);
+            this.lblHeureBDD.Size = new System.Drawing.Size(50, 20);
             this.lblHeureBDD.TabIndex = 7;
             this.lblHeureBDD.Text = "heure";
             // 
             // lblNbParticipantBDD
             // 
             this.lblNbParticipantBDD.AutoSize = true;
-            this.lblNbParticipantBDD.Location = new System.Drawing.Point(119, 97);
-            this.lblNbParticipantBDD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNbParticipantBDD.Location = new System.Drawing.Point(178, 149);
             this.lblNbParticipantBDD.Name = "lblNbParticipantBDD";
-            this.lblNbParticipantBDD.Size = new System.Drawing.Size(61, 13);
+            this.lblNbParticipantBDD.Size = new System.Drawing.Size(91, 20);
             this.lblNbParticipantBDD.TabIndex = 8;
             this.lblNbParticipantBDD.Text = "participants";
             // 
             // btnFermer
             // 
-            this.btnFermer.Location = new System.Drawing.Point(122, 133);
-            this.btnFermer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnFermer.Location = new System.Drawing.Point(183, 205);
             this.btnFermer.Name = "btnFermer";
-            this.btnFermer.Size = new System.Drawing.Size(59, 27);
-            this.btnFermer.TabIndex = 9;
-            this.btnFermer.Text = "Fermer";
+            this.btnFermer.Size = new System.Drawing.Size(88, 42);
+            this.btnFermer.TabIndex = 1;
+            this.btnFermer.Text = "&Fermer";
             this.btnFermer.UseVisualStyleBackColor = true;
             this.btnFermer.Click += new System.EventHandler(this.btnRetour_Click);
             // 
-            // FrmMatch
+            // frmMatch
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(298, 205);
+            this.ClientSize = new System.Drawing.Size(447, 315);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.lblNbParticipantBDD);
             this.Controls.Add(this.lblHeureBDD);
@@ -156,8 +146,7 @@
             this.Controls.Add(this.lblHeure);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblAdresse);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "FrmMatch";
+            this.Name = "frmMatch";
             this.Text = "FootManager - Match";
             this.ResumeLayout(false);
             this.PerformLayout();
