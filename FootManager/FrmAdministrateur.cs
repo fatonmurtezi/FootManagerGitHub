@@ -49,7 +49,19 @@ namespace FootManager
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            System.Windows.Forms.MessageBox.Show("Données modifiées avec succès");
+            if(txtAdresse.Text == "" && txtAdresseCotisation.Text == "" &&
+                txtDernierDelai.Text == "" && txtIban.Text == "" && txtMontant.Text == ""
+                && txtNom.Text == "" && txtSaison.Text == "")
+            {
+                System.Windows.Forms.MessageBox.Show("Erreur saisie incomplète");
+
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Données modifiées avec succès");
+
+            }
+
 
         }
 

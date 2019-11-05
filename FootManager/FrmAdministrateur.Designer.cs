@@ -33,7 +33,7 @@
             this.dgvMatches = new System.Windows.Forms.DataGridView();
             this.clmAdresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colHeure = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cBtn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.gbpAjouterMatch = new System.Windows.Forms.GroupBox();
             this.dtpHeure = new System.Windows.Forms.DateTimePicker();
@@ -47,8 +47,8 @@
             this.dgvMembres = new System.Windows.Forms.DataGridView();
             this.cIdentifiant = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ColPaiementCotisation = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.colPaiementRappel = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tpCotisations = new System.Windows.Forms.TabPage();
             this.btnModifier = new System.Windows.Forms.Button();
             this.gbpInformationsBancaires = new System.Windows.Forms.GroupBox();
@@ -106,7 +106,7 @@
             this.dgvMatches.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmAdresse,
             this.cDate,
-            this.Column1,
+            this.colHeure,
             this.cBtn});
             this.dgvMatches.Location = new System.Drawing.Point(0, 89);
             this.dgvMatches.Name = "dgvMatches";
@@ -133,13 +133,13 @@
             this.cDate.ReadOnly = true;
             this.cDate.Width = 130;
             // 
-            // Column1
+            // colHeure
             // 
-            this.Column1.Frozen = true;
-            this.Column1.HeaderText = "Heure";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 140;
+            this.colHeure.Frozen = true;
+            this.colHeure.HeaderText = "Heure";
+            this.colHeure.MinimumWidth = 8;
+            this.colHeure.Name = "colHeure";
+            this.colHeure.Width = 140;
             // 
             // cBtn
             // 
@@ -245,8 +245,8 @@
             this.dgvMembres.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cIdentifiant,
             this.cEmail,
-            this.Column2,
-            this.Column3});
+            this.ColPaiementCotisation,
+            this.colPaiementRappel});
             this.dgvMembres.Location = new System.Drawing.Point(0, 0);
             this.dgvMembres.Name = "dgvMembres";
             this.dgvMembres.RowHeadersWidth = 62;
@@ -274,23 +274,23 @@
             this.cEmail.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.cEmail.Width = 150;
             // 
-            // Column2
+            // ColPaiementCotisation
             // 
-            this.Column2.Frozen = true;
-            this.Column2.HeaderText = "Paiement de la cotisation";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column2.Width = 150;
+            this.ColPaiementCotisation.Frozen = true;
+            this.ColPaiementCotisation.HeaderText = "Paiement de la cotisation";
+            this.ColPaiementCotisation.MinimumWidth = 8;
+            this.ColPaiementCotisation.Name = "ColPaiementCotisation";
+            this.ColPaiementCotisation.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColPaiementCotisation.Width = 150;
             // 
-            // Column3
+            // colPaiementRappel
             // 
-            this.Column3.HeaderText = "Rappel de paiement cotisation";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column3.Width = 150;
+            this.colPaiementRappel.HeaderText = "Rappel de paiement cotisation";
+            this.colPaiementRappel.MinimumWidth = 8;
+            this.colPaiementRappel.Name = "colPaiementRappel";
+            this.colPaiementRappel.ReadOnly = true;
+            this.colPaiementRappel.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colPaiementRappel.Width = 150;
             // 
             // tpCotisations
             // 
@@ -506,12 +506,12 @@
         private System.Windows.Forms.Button btnDeconnexion;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmAdresse;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHeure;
         private System.Windows.Forms.DataGridViewButtonColumn cBtn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cIdentifiant;
         private System.Windows.Forms.DataGridViewTextBoxColumn cEmail;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewButtonColumn Column3;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn ColPaiementCotisation;
+        private System.Windows.Forms.DataGridViewButtonColumn colPaiementRappel;
         private System.Windows.Forms.Label lblDernierDelai;
         private System.Windows.Forms.Label lblMontant;
         private System.Windows.Forms.Label lblSaison;
