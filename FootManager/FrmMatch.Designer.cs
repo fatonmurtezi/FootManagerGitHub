@@ -84,6 +84,7 @@
             this.btnQuitterMatch.TabIndex = 0;
             this.btnQuitterMatch.Text = "&Rejoindre";
             this.btnQuitterMatch.UseVisualStyleBackColor = true;
+            this.btnQuitterMatch.Click += new System.EventHandler(this.btnQuitterMatch_Click);
             // 
             // lblAdresseBDD
             // 

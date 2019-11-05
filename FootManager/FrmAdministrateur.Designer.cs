@@ -99,7 +99,6 @@
             this.tpMatches.Size = new System.Drawing.Size(973, 367);
             this.tpMatches.TabIndex = 0;
             this.tpMatches.Text = "Matches";
-            this.tpMatches.Click += new System.EventHandler(this.tpMatches_Click);
             // 
             // dgvMatches
             // 
@@ -172,6 +171,7 @@
             this.dtpHeure.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpHeure.Location = new System.Drawing.Point(646, 45);
             this.dtpHeure.Name = "dtpHeure";
+            this.dtpHeure.ShowUpDown = true;
             this.dtpHeure.Size = new System.Drawing.Size(150, 26);
             this.dtpHeure.TabIndex = 2;
             // 
@@ -198,7 +198,6 @@
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(172, 26);
             this.dtpDate.TabIndex = 1;
-            this.dtpDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // lblDate
             // 
@@ -220,9 +219,9 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(860, 28);
+            this.btnAjouter.Location = new System.Drawing.Point(860, 45);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(106, 49);
+            this.btnAjouter.Size = new System.Drawing.Size(106, 32);
             this.btnAjouter.TabIndex = 3;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
@@ -238,7 +237,6 @@
             this.tpMembres.TabIndex = 1;
             this.tpMembres.Text = "Membres";
             this.tpMembres.UseVisualStyleBackColor = true;
-            this.tpMembres.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // dgvMembres
             // 
@@ -306,7 +304,6 @@
             this.tpCotisations.TabIndex = 2;
             this.tpCotisations.Text = "Cotisations";
             this.tpCotisations.UseVisualStyleBackColor = true;
-            this.tpCotisations.Click += new System.EventHandler(this.tpCotisations_Click);
             // 
             // btnModifier
             // 
@@ -334,7 +331,6 @@
             this.gbpInformationsBancaires.TabIndex = 1;
             this.gbpInformationsBancaires.TabStop = false;
             this.gbpInformationsBancaires.Text = "Informations bancaires";
-            this.gbpInformationsBancaires.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // txtAdresseCotisation
             // 
@@ -356,7 +352,6 @@
             this.txtIban.Name = "txtIban";
             this.txtIban.Size = new System.Drawing.Size(575, 26);
             this.txtIban.TabIndex = 0;
-            this.txtIban.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // lblIban
             // 
@@ -387,7 +382,6 @@
             this.lblNom.Size = new System.Drawing.Size(42, 20);
             this.lblNom.TabIndex = 5;
             this.lblNom.Text = "Nom";
-            this.lblNom.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // gbpInformationsSaison
             // 
@@ -419,7 +413,6 @@
             this.txtMontant.Name = "txtMontant";
             this.txtMontant.Size = new System.Drawing.Size(575, 26);
             this.txtMontant.TabIndex = 1;
-            this.txtMontant.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtSaison
             // 
@@ -466,6 +459,7 @@
             this.btnDeconnexion.TabIndex = 1;
             this.btnDeconnexion.Text = "&Déconnexion";
             this.btnDeconnexion.UseVisualStyleBackColor = true;
+            this.btnDeconnexion.Click += new System.EventHandler(this.btnDeconnexion_Click);
             // 
             // frmAdministrateur
             // 
@@ -476,7 +470,6 @@
             this.Controls.Add(this.tcAdmin);
             this.Name = "frmAdministrateur";
             this.Text = "FootManager - Administrateur";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmAdministrateur_FormClosing);
             this.Load += new System.EventHandler(this.FrmAdministrateur_Load);
             this.tcAdmin.ResumeLayout(false);
             this.tpMatches.ResumeLayout(false);

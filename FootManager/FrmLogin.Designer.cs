@@ -34,7 +34,6 @@
             this.tbMotDePasse = new System.Windows.Forms.TextBox();
             this.btnConnexion = new System.Windows.Forms.Button();
             this.llblCreerCompte = new System.Windows.Forms.LinkLabel();
-            this.llblMotDePasseOublie = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // tbIdentifiant
@@ -66,6 +65,7 @@
             // 
             this.tbMotDePasse.Location = new System.Drawing.Point(182, 55);
             this.tbMotDePasse.Name = "tbMotDePasse";
+            this.tbMotDePasse.PasswordChar = '*';
             this.tbMotDePasse.Size = new System.Drawing.Size(294, 26);
             this.tbMotDePasse.TabIndex = 1;
             // 
@@ -82,7 +82,7 @@
             // llblCreerCompte
             // 
             this.llblCreerCompte.AutoSize = true;
-            this.llblCreerCompte.Location = new System.Drawing.Point(178, 197);
+            this.llblCreerCompte.Location = new System.Drawing.Point(178, 164);
             this.llblCreerCompte.Name = "llblCreerCompte";
             this.llblCreerCompte.Size = new System.Drawing.Size(127, 20);
             this.llblCreerCompte.TabIndex = 3;
@@ -90,22 +90,11 @@
             this.llblCreerCompte.Text = "C&réer un compte";
             this.llblCreerCompte.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblCreerCompte_LinkClicked);
             // 
-            // llblMotDePasseOublie
-            // 
-            this.llblMotDePasseOublie.AutoSize = true;
-            this.llblMotDePasseOublie.Location = new System.Drawing.Point(178, 228);
-            this.llblMotDePasseOublie.Name = "llblMotDePasseOublie";
-            this.llblMotDePasseOublie.Size = new System.Drawing.Size(151, 20);
-            this.llblMotDePasseOublie.TabIndex = 4;
-            this.llblMotDePasseOublie.TabStop = true;
-            this.llblMotDePasseOublie.Text = "M&ot de passe oublié";
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 288);
-            this.Controls.Add(this.llblMotDePasseOublie);
             this.Controls.Add(this.llblCreerCompte);
             this.Controls.Add(this.btnConnexion);
             this.Controls.Add(this.tbMotDePasse);
@@ -130,7 +119,6 @@
         private System.Windows.Forms.TextBox tbMotDePasse;
         private System.Windows.Forms.Button btnConnexion;
         private System.Windows.Forms.LinkLabel llblCreerCompte;
-        private System.Windows.Forms.LinkLabel llblMotDePasseOublie;
     }
 }
 

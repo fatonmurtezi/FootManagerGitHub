@@ -10,45 +10,44 @@ using System.Windows.Forms;
 
 namespace FootManager
 {
-    public partial class FrmUtilisateur : Form
+    public partial class frmUtilisateur : Form
     {
-        private frmLogin frmLogin;
-        public FrmUtilisateur(frmLogin frmLogin)
+        public frmUtilisateur()
         {
-            this.frmLogin = frmLogin;
             InitializeComponent();
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tpProfil_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            frmMatch frmMatch = new frmMatch();
-            frmMatch.ShowDialog();
-
-        }
 
         private void FrmUtilisateur_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void FrmUtilisateur_FormClosing(object sender, FormClosingEventArgs e)
+
+        private void btnModifier_Click(object sender, EventArgs e)
         {
-            frmLogin.Dispose();
+
+        }
+
+        private void dtgUtilisateur_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var senderGrid = (DataGridView)sender;
+
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+            {
+               // frmMatch.ShowDialog();
+            }
+
+        }
+
+        private void btnDeconnexion_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            var frmLog = new frmLogin();
+            frmLog.ShowDialog();
+
+            this.Close();
         }
     }
 }

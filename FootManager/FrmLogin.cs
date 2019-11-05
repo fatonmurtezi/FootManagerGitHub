@@ -21,15 +21,20 @@ namespace FootManager
         {
             if (tbIdentifiant.Text == "admin")
             {
-                frmAdministrateur frmAdministrateur = new frmAdministrateur(this);
-                frmAdministrateur.Show();
+                frmAdministrateur frmAdministrateur = new frmAdministrateur();
                 this.Hide();
+
+                frmAdministrateur.ShowDialog();
+                this.Close();
+
             }
-            if(tbIdentifiant.Text == "user")
+            if (tbIdentifiant.Text == "user")
             {
-                FrmUtilisateur frmUtilisateur = new FrmUtilisateur(this);
-                frmUtilisateur.Show();
+                frmUtilisateur frmUtilisateur = new frmUtilisateur();
                 this.Hide();
+                frmUtilisateur.ShowDialog();
+                this.Close();
+
             }
         }
 
@@ -52,6 +57,11 @@ namespace FootManager
             this.Hide();
         }
 
-        
+        private void llblMotDePasseOublie_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmMotDePasse frmMotDePasse = new frmMotDePasse(this);
+            frmMotDePasse.Show();
+            this.Hide();
+        }
     }
 }

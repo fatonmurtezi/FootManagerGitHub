@@ -19,7 +19,19 @@ namespace FootManager
 
         private void btnRetour_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void btnQuitterMatch_Click(object sender, EventArgs e)
+        {
+            if (btnQuitterMatch.Text == "&Quitter")
+            {
+                btnQuitterMatch.Text = "&Rejoindre";
+            }
+            else
+            {
+                btnQuitterMatch.Text = "&Quitter";
+            }
         }
     }
 }

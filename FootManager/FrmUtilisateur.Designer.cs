@@ -1,6 +1,6 @@
 ﻿namespace FootManager
 {
-    partial class FrmUtilisateur
+    partial class frmUtilisateur
     {
         /// <summary>
         /// Required designer variable.
@@ -77,7 +77,6 @@
             this.tpMatches.Size = new System.Drawing.Size(1002, 422);
             this.tpMatches.TabIndex = 0;
             this.tpMatches.Text = "Matches";
-            this.tpMatches.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // dtgUtilisateur
             // 
@@ -94,7 +93,7 @@
             this.dtgUtilisateur.RowTemplate.Height = 28;
             this.dtgUtilisateur.Size = new System.Drawing.Size(990, 418);
             this.dtgUtilisateur.TabIndex = 0;
-            this.dtgUtilisateur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dtgUtilisateur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgUtilisateur_CellContentClick);
             // 
             // clmAdresse
             // 
@@ -153,7 +152,6 @@
             this.tpProfil.Size = new System.Drawing.Size(1002, 422);
             this.tpProfil.TabIndex = 1;
             this.tpProfil.Text = "Profil";
-            this.tpProfil.Click += new System.EventHandler(this.tpProfil_Click);
             // 
             // lblStatutBDD
             // 
@@ -190,6 +188,7 @@
             this.btnModifier.TabIndex = 1;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // lblEmailBDD
             // 
@@ -199,7 +198,6 @@
             this.lblEmailBDD.Size = new System.Drawing.Size(51, 20);
             this.lblEmailBDD.TabIndex = 9;
             this.lblEmailBDD.Text = "label2";
-            this.lblEmailBDD.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblIdentifiantBDD
             // 
@@ -214,6 +212,7 @@
             // 
             this.txtModifierMdp.Location = new System.Drawing.Point(258, 223);
             this.txtModifierMdp.Name = "txtModifierMdp";
+            this.txtModifierMdp.PasswordChar = '*';
             this.txtModifierMdp.Size = new System.Drawing.Size(336, 26);
             this.txtModifierMdp.TabIndex = 0;
             // 
@@ -279,17 +278,18 @@
             this.btnDeconnexion.TabIndex = 1;
             this.btnDeconnexion.Text = "Déconnexion";
             this.btnDeconnexion.UseVisualStyleBackColor = true;
+            this.btnDeconnexion.Click += new System.EventHandler(this.btnDeconnexion_Click);
             // 
-            // FrmUtilisateur
+            // frmUtilisateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1011, 498);
             this.Controls.Add(this.btnDeconnexion);
             this.Controls.Add(this.tcUtilisateur);
-            this.Name = "FrmUtilisateur";
-            this.Text = "FrmUtilisateur";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmUtilisateur_FormClosing);
+            this.MaximizeBox = false;
+            this.Name = "frmUtilisateur";
+            this.Text = "FootManager - Utilisateur";
             this.Load += new System.EventHandler(this.FrmUtilisateur_Load);
             this.tcUtilisateur.ResumeLayout(false);
             this.tpMatches.ResumeLayout(false);
