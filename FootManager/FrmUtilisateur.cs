@@ -23,10 +23,64 @@ namespace FootManager
 
         }
 
+        bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
+            if (txtModifierEmail.Text != "")//si vide ça veut dire qu'on veut pas le changer
+            {
+                if(txtModifierEmail.Text == lblEmailBDD.Text)
+                {
+                    System.Windows.Forms.MessageBox.Show("L'email n'est pas différent");
 
+                }
+                else
+                {
+                    if (IsValidEmail(txtModifierEmail.Text))
+                    {
+                        System.Windows.Forms.MessageBox.Show("L'email a été changé");
+                        lblEmailBDD.Text = txtModifierEmail.Text;
+                        txtModifierEmail.Text = "";
+                    }
+                    else
+                    {
+                        System.Windows.Forms.MessageBox.Show("L'email est invalide");
+
+                    }
+
+
+                }
+            }
+            
+
+            if (txtModifierMdp.Text !="" )//si le mdp est vide ça veut dire qu'on veut pas le changer
+            {
+                if (txtModifierMdp.Text != txtConfirmerMdp.Text)
+                {
+                    System.Windows.Forms.MessageBox.Show("La confirmation du mot de passe est différente");
+
+                    //mdp invalide
+                }
+                else
+                {
+                    System.Windows.Forms.MessageBox.Show("Mot de passe modifié");
+                    txtConfirmerMdp.Text = "";
+                    txtModifierMdp.Text = "";
+                }
+            }
+
+            
         }
 
         private void dtgUtilisateur_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -35,7 +89,8 @@ namespace FootManager
 
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
-               // frmMatch.ShowDialog();
+                var frmMatch = new frmMatch();
+                frmMatch.ShowDialog();
             }
 
         }
@@ -49,5 +104,7 @@ namespace FootManager
 
             this.Close();
         }
+
+   
     }
 }

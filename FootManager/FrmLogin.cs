@@ -19,30 +19,32 @@ namespace FootManager
 
         private void btnConnexion_Click(object sender, EventArgs e)
         {
-            if (tbIdentifiant.Text == "admin")
-            {
-                frmAdministrateur frmAdministrateur = new frmAdministrateur();
-                this.Hide();
-
-                frmAdministrateur.ShowDialog();
-                this.Close();
-
+            if(tbIdentifiant.Text == ""){
+                System.Windows.Forms.MessageBox.Show("Erreur d'identifiant");
             }
-            if (tbIdentifiant.Text == "user")
+            else
             {
-                frmUtilisateur frmUtilisateur = new frmUtilisateur();
-                this.Hide();
-                frmUtilisateur.ShowDialog();
-                this.Close();
+                if (tbIdentifiant.Text == "admin")
+                {
+                    frmAdministrateur frmAdministrateur = new frmAdministrateur();
+                    this.Hide();
 
+                    frmAdministrateur.ShowDialog();
+                    this.Close();
+
+                }
+                if (tbIdentifiant.Text == "user")
+                {
+                    frmUtilisateur frmUtilisateur = new frmUtilisateur();
+                    this.Hide();
+                    frmUtilisateur.ShowDialog();
+                    this.Close();
+
+                }
             }
+            
         }
 
-        private void lblCreerCompte_Click(object sender, EventArgs e)
-        {
-            frmCreerCompte frmCreerCompte = new frmCreerCompte(this);
-            frmCreerCompte.Show();
-        }
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
@@ -52,16 +54,12 @@ namespace FootManager
 
         private void llblCreerCompte_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmCreerCompte frmCreerCompte = new frmCreerCompte(this);
-            frmCreerCompte.Show();
+            frmCreerCompte frmCreerCompte = new frmCreerCompte();
             this.Hide();
+            frmCreerCompte.ShowDialog();
+            this.Close();
         }
 
-        private void llblMotDePasseOublie_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            frmMotDePasse frmMotDePasse = new frmMotDePasse(this);
-            frmMotDePasse.Show();
-            this.Hide();
-        }
+
     }
 }

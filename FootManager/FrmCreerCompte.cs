@@ -12,7 +12,6 @@ namespace FootManager
 {
     public partial class frmCreerCompte : Form
     {
-        private frmLogin frmLogin;
         private bool pass;
         bool IsValidEmail(string email)
         {
@@ -26,17 +25,19 @@ namespace FootManager
                 return false;
             }
         }
-        public frmCreerCompte(frmLogin frmLogin)
+        public frmCreerCompte()
         {
-            this.frmLogin = frmLogin;
             InitializeComponent();
         }
 
         private void btnAnnuler_Click(object sender, EventArgs e)
         {
-            
-            frmLogin.Show();
+
             this.Hide();
+            var frmLog = new frmLogin();
+            frmLog.ShowDialog();
+
+            this.Close();
         }
 
         private void FrmCreerCompte_Load(object sender, EventArgs e)
@@ -49,7 +50,7 @@ namespace FootManager
             
             if(e.CloseReason == CloseReason.UserClosing)
             {
-                frmLogin.Dispose();
+              //  frmLogin.Dispose();
             }
                 
         }
@@ -63,12 +64,26 @@ namespace FootManager
                 pass = false;
             }
 
-            if (!txtMotDePasse.Text.Equals(txtConfirmerMotDePasse)) {
-                System.Windows.Forms.MessageBox.Show("Mots de passe différents");
 
-                pass = false;
+
+            if(txtMotDePasse.Text == "")
+            {          
+                 System.Windows.Forms.MessageBox.Show("Mot de passe vide");
+                 pass = false;
+
             }
 
+
+            if (txtMotDePasse.Text != "")
+            {
+                if (txtMotDePasse.Text != txtConfirmerMotDePasse.Text)
+                {
+                    System.Windows.Forms.MessageBox.Show("Mots de passe différents");
+
+                    pass = false;
+                }
+            }
+          
 
 
             if (!IsValidEmail(txtEmail.Text)){
@@ -78,9 +93,12 @@ namespace FootManager
 
             if (pass == true)
             {
-                System.Windows.Forms.MessageBox.Show("Créer le compte");
+                System.Windows.Forms.MessageBox.Show("Création du compte");
                 this.Hide();
-                frmLogin.Show();
+                var frmLog = new frmLogin();
+                frmLog.ShowDialog();
+
+                this.Close();
             }
         }
         

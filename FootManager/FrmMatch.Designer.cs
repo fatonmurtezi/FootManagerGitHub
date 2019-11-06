@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMatch));
             this.lblAdresse = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblHeure = new System.Windows.Forms.Label();
@@ -91,36 +92,36 @@
             this.lblAdresseBDD.AutoSize = true;
             this.lblAdresseBDD.Location = new System.Drawing.Point(178, 49);
             this.lblAdresseBDD.Name = "lblAdresseBDD";
-            this.lblAdresseBDD.Size = new System.Drawing.Size(66, 20);
+            this.lblAdresseBDD.Size = new System.Drawing.Size(229, 20);
             this.lblAdresseBDD.TabIndex = 5;
-            this.lblAdresseBDD.Text = "adresse";
+            this.lblAdresseBDD.Text = "Rue de la Heg 1 1227 Carouge";
             // 
             // lblDateBDD
             // 
             this.lblDateBDD.AutoSize = true;
             this.lblDateBDD.Location = new System.Drawing.Point(178, 82);
             this.lblDateBDD.Name = "lblDateBDD";
-            this.lblDateBDD.Size = new System.Drawing.Size(41, 20);
+            this.lblDateBDD.Size = new System.Drawing.Size(89, 20);
             this.lblDateBDD.TabIndex = 6;
-            this.lblDateBDD.Text = "date";
+            this.lblDateBDD.Text = "06.12.2019";
             // 
             // lblHeureBDD
             // 
             this.lblHeureBDD.AutoSize = true;
             this.lblHeureBDD.Location = new System.Drawing.Point(178, 112);
             this.lblHeureBDD.Name = "lblHeureBDD";
-            this.lblHeureBDD.Size = new System.Drawing.Size(50, 20);
+            this.lblHeureBDD.Size = new System.Drawing.Size(71, 20);
             this.lblHeureBDD.TabIndex = 7;
-            this.lblHeureBDD.Text = "heure";
+            this.lblHeureBDD.Text = "10:30:00";
             // 
             // lblNbParticipantBDD
             // 
             this.lblNbParticipantBDD.AutoSize = true;
             this.lblNbParticipantBDD.Location = new System.Drawing.Point(178, 149);
             this.lblNbParticipantBDD.Name = "lblNbParticipantBDD";
-            this.lblNbParticipantBDD.Size = new System.Drawing.Size(91, 20);
+            this.lblNbParticipantBDD.Size = new System.Drawing.Size(40, 20);
             this.lblNbParticipantBDD.TabIndex = 8;
-            this.lblNbParticipantBDD.Text = "participants";
+            this.lblNbParticipantBDD.Text = "5/10";
             // 
             // btnFermer
             // 
@@ -136,7 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 315);
+            this.ClientSize = new System.Drawing.Size(451, 334);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.lblNbParticipantBDD);
             this.Controls.Add(this.lblHeureBDD);
@@ -147,6 +148,9 @@
             this.Controls.Add(this.lblHeure);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblAdresse);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmMatch";
             this.Text = "FootManager - Match";
             this.ResumeLayout(false);

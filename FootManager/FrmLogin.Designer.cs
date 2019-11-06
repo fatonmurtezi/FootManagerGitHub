@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.tbIdentifiant = new System.Windows.Forms.TextBox();
             this.lblIdentifiant = new System.Windows.Forms.Label();
             this.lblMotDePasse = new System.Windows.Forms.Label();
             this.tbMotDePasse = new System.Windows.Forms.TextBox();
             this.btnConnexion = new System.Windows.Forms.Button();
             this.llblCreerCompte = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tbIdentifiant
             // 
-            this.tbIdentifiant.Location = new System.Drawing.Point(182, 22);
+            this.tbIdentifiant.Location = new System.Drawing.Point(185, 134);
             this.tbIdentifiant.Name = "tbIdentifiant";
             this.tbIdentifiant.Size = new System.Drawing.Size(294, 26);
             this.tbIdentifiant.TabIndex = 0;
@@ -46,7 +49,7 @@
             // lblIdentifiant
             // 
             this.lblIdentifiant.AutoSize = true;
-            this.lblIdentifiant.Location = new System.Drawing.Point(12, 25);
+            this.lblIdentifiant.Location = new System.Drawing.Point(15, 137);
             this.lblIdentifiant.Name = "lblIdentifiant";
             this.lblIdentifiant.Size = new System.Drawing.Size(80, 20);
             this.lblIdentifiant.TabIndex = 1;
@@ -55,7 +58,7 @@
             // lblMotDePasse
             // 
             this.lblMotDePasse.AutoSize = true;
-            this.lblMotDePasse.Location = new System.Drawing.Point(12, 58);
+            this.lblMotDePasse.Location = new System.Drawing.Point(15, 170);
             this.lblMotDePasse.Name = "lblMotDePasse";
             this.lblMotDePasse.Size = new System.Drawing.Size(105, 20);
             this.lblMotDePasse.TabIndex = 2;
@@ -63,7 +66,7 @@
             // 
             // tbMotDePasse
             // 
-            this.tbMotDePasse.Location = new System.Drawing.Point(182, 55);
+            this.tbMotDePasse.Location = new System.Drawing.Point(185, 167);
             this.tbMotDePasse.Name = "tbMotDePasse";
             this.tbMotDePasse.PasswordChar = '*';
             this.tbMotDePasse.Size = new System.Drawing.Size(294, 26);
@@ -71,7 +74,7 @@
             // 
             // btnConnexion
             // 
-            this.btnConnexion.Location = new System.Drawing.Point(182, 103);
+            this.btnConnexion.Location = new System.Drawing.Point(185, 215);
             this.btnConnexion.Name = "btnConnexion";
             this.btnConnexion.Size = new System.Drawing.Size(294, 35);
             this.btnConnexion.TabIndex = 2;
@@ -82,7 +85,7 @@
             // llblCreerCompte
             // 
             this.llblCreerCompte.AutoSize = true;
-            this.llblCreerCompte.Location = new System.Drawing.Point(178, 164);
+            this.llblCreerCompte.Location = new System.Drawing.Point(181, 276);
             this.llblCreerCompte.Name = "llblCreerCompte";
             this.llblCreerCompte.Size = new System.Drawing.Size(127, 20);
             this.llblCreerCompte.TabIndex = 3;
@@ -90,22 +93,36 @@
             this.llblCreerCompte.Text = "C&réer un compte";
             this.llblCreerCompte.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblCreerCompte_LinkClicked);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(185, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(140, 89);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(556, 288);
+            this.ClientSize = new System.Drawing.Size(556, 345);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.llblCreerCompte);
             this.Controls.Add(this.btnConnexion);
             this.Controls.Add(this.tbMotDePasse);
             this.Controls.Add(this.lblMotDePasse);
             this.Controls.Add(this.lblIdentifiant);
             this.Controls.Add(this.tbIdentifiant);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
             this.Text = "FootManager - Identification";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,6 +136,7 @@
         private System.Windows.Forms.TextBox tbMotDePasse;
         private System.Windows.Forms.Button btnConnexion;
         private System.Windows.Forms.LinkLabel llblCreerCompte;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

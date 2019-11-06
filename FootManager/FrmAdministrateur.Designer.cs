@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdministrateur));
             this.tcAdmin = new System.Windows.Forms.TabControl();
             this.tpMatches = new System.Windows.Forms.TabPage();
             this.dgvMatches = new System.Windows.Forms.DataGridView();
@@ -44,11 +45,20 @@
             this.lblAdresseMatch = new System.Windows.Forms.Label();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.tpMembres = new System.Windows.Forms.TabPage();
+            this.gbpAjouterMembre = new System.Windows.Forms.GroupBox();
+            this.txtMDPMembre = new System.Windows.Forms.TextBox();
+            this.lblMDP = new System.Windows.Forms.Label();
+            this.btnAjouterMembre = new System.Windows.Forms.Button();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblIdentifiant = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtIdentifiant = new System.Windows.Forms.TextBox();
             this.dgvMembres = new System.Windows.Forms.DataGridView();
             this.cIdentifiant = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColPaiementCotisation = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.colPaiementRappel = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.colSupprimerMembre = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tpCotisations = new System.Windows.Forms.TabPage();
             this.btnModifier = new System.Windows.Forms.Button();
             this.gbpInformationsBancaires = new System.Windows.Forms.GroupBox();
@@ -59,22 +69,24 @@
             this.lblAdresseCotisations = new System.Windows.Forms.Label();
             this.lblNom = new System.Windows.Forms.Label();
             this.gbpInformationsSaison = new System.Windows.Forms.GroupBox();
-            this.txtDernierDelai = new System.Windows.Forms.TextBox();
-            this.txtMontant = new System.Windows.Forms.TextBox();
             this.txtSaison = new System.Windows.Forms.TextBox();
             this.lblSaison = new System.Windows.Forms.Label();
             this.lblMontant = new System.Windows.Forms.Label();
             this.lblDernierDelai = new System.Windows.Forms.Label();
             this.btnDeconnexion = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.npdMontant = new System.Windows.Forms.NumericUpDown();
             this.tcAdmin.SuspendLayout();
             this.tpMatches.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatches)).BeginInit();
             this.gbpAjouterMatch.SuspendLayout();
             this.tpMembres.SuspendLayout();
+            this.gbpAjouterMembre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembres)).BeginInit();
             this.tpCotisations.SuspendLayout();
             this.gbpInformationsBancaires.SuspendLayout();
             this.gbpInformationsSaison.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.npdMontant)).BeginInit();
             this.SuspendLayout();
             // 
             // tcAdmin
@@ -102,6 +114,8 @@
             // 
             // dgvMatches
             // 
+            this.dgvMatches.AllowUserToResizeColumns = false;
+            this.dgvMatches.AllowUserToResizeRows = false;
             this.dgvMatches.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMatches.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmAdresse,
@@ -112,7 +126,7 @@
             this.dgvMatches.Name = "dgvMatches";
             this.dgvMatches.RowHeadersWidth = 62;
             this.dgvMatches.RowTemplate.Height = 28;
-            this.dgvMatches.Size = new System.Drawing.Size(966, 265);
+            this.dgvMatches.Size = new System.Drawing.Size(966, 278);
             this.dgvMatches.TabIndex = 1;
             // 
             // clmAdresse
@@ -219,9 +233,9 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(860, 45);
+            this.btnAjouter.Location = new System.Drawing.Point(848, 39);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(106, 32);
+            this.btnAjouter.Size = new System.Drawing.Size(115, 32);
             this.btnAjouter.TabIndex = 3;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
@@ -229,6 +243,7 @@
             // 
             // tpMembres
             // 
+            this.tpMembres.Controls.Add(this.gbpAjouterMembre);
             this.tpMembres.Controls.Add(this.dgvMembres);
             this.tpMembres.Location = new System.Drawing.Point(4, 29);
             this.tpMembres.Name = "tpMembres";
@@ -238,6 +253,81 @@
             this.tpMembres.Text = "Membres";
             this.tpMembres.UseVisualStyleBackColor = true;
             // 
+            // gbpAjouterMembre
+            // 
+            this.gbpAjouterMembre.Controls.Add(this.txtMDPMembre);
+            this.gbpAjouterMembre.Controls.Add(this.lblMDP);
+            this.gbpAjouterMembre.Controls.Add(this.btnAjouterMembre);
+            this.gbpAjouterMembre.Controls.Add(this.lblEmail);
+            this.gbpAjouterMembre.Controls.Add(this.lblIdentifiant);
+            this.gbpAjouterMembre.Controls.Add(this.txtEmail);
+            this.gbpAjouterMembre.Controls.Add(this.txtIdentifiant);
+            this.gbpAjouterMembre.Location = new System.Drawing.Point(3, 0);
+            this.gbpAjouterMembre.Name = "gbpAjouterMembre";
+            this.gbpAjouterMembre.Size = new System.Drawing.Size(962, 64);
+            this.gbpAjouterMembre.TabIndex = 0;
+            this.gbpAjouterMembre.TabStop = false;
+            this.gbpAjouterMembre.Text = "Ajouter un membre";
+            // 
+            // txtMDPMembre
+            // 
+            this.txtMDPMembre.Location = new System.Drawing.Point(662, 25);
+            this.txtMDPMembre.Name = "txtMDPMembre";
+            this.txtMDPMembre.PasswordChar = '*';
+            this.txtMDPMembre.Size = new System.Drawing.Size(174, 26);
+            this.txtMDPMembre.TabIndex = 2;
+            // 
+            // lblMDP
+            // 
+            this.lblMDP.AutoSize = true;
+            this.lblMDP.Location = new System.Drawing.Point(551, 28);
+            this.lblMDP.Name = "lblMDP";
+            this.lblMDP.Size = new System.Drawing.Size(105, 20);
+            this.lblMDP.TabIndex = 5;
+            this.lblMDP.Text = "&Mot de passe";
+            // 
+            // btnAjouterMembre
+            // 
+            this.btnAjouterMembre.Location = new System.Drawing.Point(842, 18);
+            this.btnAjouterMembre.Name = "btnAjouterMembre";
+            this.btnAjouterMembre.Size = new System.Drawing.Size(114, 33);
+            this.btnAjouterMembre.TabIndex = 3;
+            this.btnAjouterMembre.Text = "&Ajouter";
+            this.btnAjouterMembre.UseVisualStyleBackColor = true;
+            this.btnAjouterMembre.Click += new System.EventHandler(this.btnAjouterMembre_Click);
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(264, 26);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(48, 20);
+            this.lblEmail.TabIndex = 3;
+            this.lblEmail.Text = "&Email";
+            // 
+            // lblIdentifiant
+            // 
+            this.lblIdentifiant.AutoSize = true;
+            this.lblIdentifiant.Location = new System.Drawing.Point(2, 28);
+            this.lblIdentifiant.Name = "lblIdentifiant";
+            this.lblIdentifiant.Size = new System.Drawing.Size(80, 20);
+            this.lblIdentifiant.TabIndex = 0;
+            this.lblIdentifiant.Text = "&Identifiant";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(318, 25);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(227, 26);
+            this.txtEmail.TabIndex = 1;
+            // 
+            // txtIdentifiant
+            // 
+            this.txtIdentifiant.Location = new System.Drawing.Point(88, 25);
+            this.txtIdentifiant.Name = "txtIdentifiant";
+            this.txtIdentifiant.Size = new System.Drawing.Size(170, 26);
+            this.txtIdentifiant.TabIndex = 0;
+            // 
             // dgvMembres
             // 
             this.dgvMembres.BackgroundColor = System.Drawing.SystemColors.HighlightText;
@@ -246,13 +336,14 @@
             this.cIdentifiant,
             this.cEmail,
             this.ColPaiementCotisation,
-            this.colPaiementRappel});
-            this.dgvMembres.Location = new System.Drawing.Point(0, 0);
+            this.colPaiementRappel,
+            this.colSupprimerMembre});
+            this.dgvMembres.Location = new System.Drawing.Point(0, 70);
             this.dgvMembres.Name = "dgvMembres";
             this.dgvMembres.RowHeadersWidth = 62;
             this.dgvMembres.RowTemplate.Height = 28;
-            this.dgvMembres.Size = new System.Drawing.Size(969, 365);
-            this.dgvMembres.TabIndex = 0;
+            this.dgvMembres.Size = new System.Drawing.Size(969, 295);
+            this.dgvMembres.TabIndex = 1;
             // 
             // cIdentifiant
             // 
@@ -272,25 +363,34 @@
             this.cEmail.Name = "cEmail";
             this.cEmail.ReadOnly = true;
             this.cEmail.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.cEmail.Width = 150;
+            this.cEmail.Width = 155;
             // 
             // ColPaiementCotisation
             // 
+            this.ColPaiementCotisation.FillWeight = 90F;
             this.ColPaiementCotisation.Frozen = true;
-            this.ColPaiementCotisation.HeaderText = "Paiement de la cotisation";
+            this.ColPaiementCotisation.HeaderText = "Statut du paiement";
             this.ColPaiementCotisation.MinimumWidth = 8;
             this.ColPaiementCotisation.Name = "ColPaiementCotisation";
             this.ColPaiementCotisation.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColPaiementCotisation.Width = 150;
+            this.ColPaiementCotisation.Width = 95;
             // 
             // colPaiementRappel
             // 
-            this.colPaiementRappel.HeaderText = "Rappel de paiement cotisation";
+            this.colPaiementRappel.Frozen = true;
+            this.colPaiementRappel.HeaderText = "Rappel de paiement";
             this.colPaiementRappel.MinimumWidth = 8;
             this.colPaiementRappel.Name = "colPaiementRappel";
             this.colPaiementRappel.ReadOnly = true;
             this.colPaiementRappel.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colPaiementRappel.Width = 150;
+            this.colPaiementRappel.Width = 105;
+            // 
+            // colSupprimerMembre
+            // 
+            this.colSupprimerMembre.HeaderText = "Supprimer";
+            this.colSupprimerMembre.MinimumWidth = 8;
+            this.colSupprimerMembre.Name = "colSupprimerMembre";
+            this.colSupprimerMembre.Width = 85;
             // 
             // tpCotisations
             // 
@@ -361,7 +461,7 @@
             this.lblIban.Name = "lblIban";
             this.lblIban.Size = new System.Drawing.Size(47, 20);
             this.lblIban.TabIndex = 3;
-            this.lblIban.Text = "IBAN";
+            this.lblIban.Text = "I&BAN";
             // 
             // lblAdresseCotisations
             // 
@@ -371,7 +471,7 @@
             this.lblAdresseCotisations.Name = "lblAdresseCotisations";
             this.lblAdresseCotisations.Size = new System.Drawing.Size(68, 20);
             this.lblAdresseCotisations.TabIndex = 4;
-            this.lblAdresseCotisations.Text = "Adresse";
+            this.lblAdresseCotisations.Text = "&Adresse";
             // 
             // lblNom
             // 
@@ -381,12 +481,12 @@
             this.lblNom.Name = "lblNom";
             this.lblNom.Size = new System.Drawing.Size(42, 20);
             this.lblNom.TabIndex = 5;
-            this.lblNom.Text = "Nom";
+            this.lblNom.Text = "&Nom";
             // 
             // gbpInformationsSaison
             // 
-            this.gbpInformationsSaison.Controls.Add(this.txtDernierDelai);
-            this.gbpInformationsSaison.Controls.Add(this.txtMontant);
+            this.gbpInformationsSaison.Controls.Add(this.npdMontant);
+            this.gbpInformationsSaison.Controls.Add(this.dateTimePicker1);
             this.gbpInformationsSaison.Controls.Add(this.txtSaison);
             this.gbpInformationsSaison.Controls.Add(this.lblSaison);
             this.gbpInformationsSaison.Controls.Add(this.lblMontant);
@@ -399,20 +499,6 @@
             this.gbpInformationsSaison.TabIndex = 0;
             this.gbpInformationsSaison.TabStop = false;
             this.gbpInformationsSaison.Text = "Informations de la saison";
-            // 
-            // txtDernierDelai
-            // 
-            this.txtDernierDelai.Location = new System.Drawing.Point(299, 94);
-            this.txtDernierDelai.Name = "txtDernierDelai";
-            this.txtDernierDelai.Size = new System.Drawing.Size(575, 26);
-            this.txtDernierDelai.TabIndex = 2;
-            // 
-            // txtMontant
-            // 
-            this.txtMontant.Location = new System.Drawing.Point(299, 62);
-            this.txtMontant.Name = "txtMontant";
-            this.txtMontant.Size = new System.Drawing.Size(575, 26);
-            this.txtMontant.TabIndex = 1;
             // 
             // txtSaison
             // 
@@ -439,7 +525,7 @@
             this.lblMontant.Name = "lblMontant";
             this.lblMontant.Size = new System.Drawing.Size(276, 20);
             this.lblMontant.TabIndex = 1;
-            this.lblMontant.Text = "Montant de la cotisation par personne";
+            this.lblMontant.Text = "M&ontant de la cotisation par personne";
             // 
             // lblDernierDelai
             // 
@@ -449,25 +535,47 @@
             this.lblDernierDelai.Name = "lblDernierDelai";
             this.lblDernierDelai.Size = new System.Drawing.Size(265, 20);
             this.lblDernierDelai.TabIndex = 2;
-            this.lblDernierDelai.Text = "Dernier délai pour payer la cotisation";
+            this.lblDernierDelai.Text = "D&ernier délai pour payer la cotisation";
             // 
             // btnDeconnexion
             // 
-            this.btnDeconnexion.Location = new System.Drawing.Point(404, 415);
+            this.btnDeconnexion.Location = new System.Drawing.Point(404, 419);
             this.btnDeconnexion.Name = "btnDeconnexion";
-            this.btnDeconnexion.Size = new System.Drawing.Size(146, 31);
+            this.btnDeconnexion.Size = new System.Drawing.Size(146, 32);
             this.btnDeconnexion.TabIndex = 1;
             this.btnDeconnexion.Text = "&Déconnexion";
             this.btnDeconnexion.UseVisualStyleBackColor = true;
-            this.btnDeconnexion.Click += new System.EventHandler(this.btnDeconnexion_Click);
+            this.btnDeconnexion.Click += new System.EventHandler(this.btnDeconnexion_Click_1);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(299, 100);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(575, 26);
+            this.dateTimePicker1.TabIndex = 3;
+            // 
+            // npdMontant
+            // 
+            this.npdMontant.Location = new System.Drawing.Point(299, 66);
+            this.npdMontant.Maximum = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
+            this.npdMontant.Name = "npdMontant";
+            this.npdMontant.Size = new System.Drawing.Size(575, 26);
+            this.npdMontant.TabIndex = 3;
             // 
             // frmAdministrateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 449);
+            this.ClientSize = new System.Drawing.Size(983, 463);
             this.Controls.Add(this.btnDeconnexion);
             this.Controls.Add(this.tcAdmin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmAdministrateur";
             this.Text = "FootManager - Administrateur";
             this.Load += new System.EventHandler(this.FrmAdministrateur_Load);
@@ -477,12 +585,15 @@
             this.gbpAjouterMatch.ResumeLayout(false);
             this.gbpAjouterMatch.PerformLayout();
             this.tpMembres.ResumeLayout(false);
+            this.gbpAjouterMembre.ResumeLayout(false);
+            this.gbpAjouterMembre.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembres)).EndInit();
             this.tpCotisations.ResumeLayout(false);
             this.gbpInformationsBancaires.ResumeLayout(false);
             this.gbpInformationsBancaires.PerformLayout();
             this.gbpInformationsSaison.ResumeLayout(false);
             this.gbpInformationsSaison.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.npdMontant)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -503,15 +614,10 @@
         private System.Windows.Forms.DateTimePicker dtpHeure;
         private System.Windows.Forms.DataGridView dgvMembres;
         private System.Windows.Forms.TabPage tpCotisations;
-        private System.Windows.Forms.Button btnDeconnexion;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmAdresse;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn colHeure;
         private System.Windows.Forms.DataGridViewButtonColumn cBtn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cIdentifiant;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cEmail;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn ColPaiementCotisation;
-        private System.Windows.Forms.DataGridViewButtonColumn colPaiementRappel;
         private System.Windows.Forms.Label lblDernierDelai;
         private System.Windows.Forms.Label lblMontant;
         private System.Windows.Forms.Label lblSaison;
@@ -521,11 +627,25 @@
         private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.GroupBox gbpInformationsSaison;
         private System.Windows.Forms.Button btnModifier;
-        private System.Windows.Forms.TextBox txtMontant;
         private System.Windows.Forms.TextBox txtSaison;
         private System.Windows.Forms.TextBox txtIban;
-        private System.Windows.Forms.TextBox txtDernierDelai;
         private System.Windows.Forms.TextBox txtAdresseCotisation;
         private System.Windows.Forms.TextBox txtNom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cIdentifiant;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cEmail;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn ColPaiementCotisation;
+        private System.Windows.Forms.DataGridViewButtonColumn colPaiementRappel;
+        private System.Windows.Forms.DataGridViewButtonColumn colSupprimerMembre;
+        private System.Windows.Forms.GroupBox gbpAjouterMembre;
+        private System.Windows.Forms.Label lblIdentifiant;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtIdentifiant;
+        private System.Windows.Forms.Button btnAjouterMembre;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Button btnDeconnexion;
+        private System.Windows.Forms.TextBox txtMDPMembre;
+        private System.Windows.Forms.Label lblMDP;
+        private System.Windows.Forms.NumericUpDown npdMontant;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

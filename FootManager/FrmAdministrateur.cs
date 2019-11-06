@@ -49,16 +49,40 @@ namespace FootManager
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if(txtAdresse.Text == "" && txtAdresseCotisation.Text == "" &&
-                txtDernierDelai.Text == "" && txtIban.Text == "" && txtMontant.Text == ""
-                && txtNom.Text == "" && txtSaison.Text == "")
+            bool pass = true;
+            if(txtSaison.Text == "")
             {
-                System.Windows.Forms.MessageBox.Show("Erreur saisie incomplète");
-
+                System.Windows.Forms.MessageBox.Show("Erreur de saison");
+                pass = false;
             }
-            else
+
+            if(txtIban.Text == "") 
+            {
+                System.Windows.Forms.MessageBox.Show("Erreur d'iban");
+
+                pass = false;
+            }
+
+            if(txtNom.Text == "")
+            {
+                System.Windows.Forms.MessageBox.Show("Erreur de nom");
+
+                pass = false;
+            }
+
+            if(txtAdresseCotisation.Text == "")
+            {
+                System.Windows.Forms.MessageBox.Show("Erreur d'adresse");
+
+                pass = false;
+            }
+            
+
+
+            if(pass)
             {
                 System.Windows.Forms.MessageBox.Show("Données modifiées avec succès");
+                //envoyer a la bdd et afficher les champs contenu dans la bdd pour la prochaine fois
 
             }
 
@@ -100,6 +124,59 @@ namespace FootManager
             this.Close();
         }
 
-  
+        private void btnDeconnexion_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            var frmLog = new frmLogin();
+            frmLog.ShowDialog();
+            this.Close();
+        }
+
+        bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
+
+        private void btnAjouterMembre_Click(object sender, EventArgs e)
+        {
+            bool pass = true;
+
+            if (txtIdentifiant.Text == "")
+            {
+                System.Windows.Forms.MessageBox.Show("Erreur d'identifiant");
+                pass = false;
+            }
+
+
+            if (txtEmail.Text == "" || !IsValidEmail(txtEmail.Text))
+            {
+                System.Windows.Forms.MessageBox.Show("Erreur d'email");
+
+                pass = false;
+            }
+            if(txtMDPMembre.Text == "")
+            {
+                System.Windows.Forms.MessageBox.Show("Erreur de mot de passe");
+                pass = false;
+            }
+
+            if (pass)
+            {
+                System.Windows.Forms.MessageBox.Show("Membre ajouté avec succès");
+                txtIdentifiant.Text = "";
+                txtEmail.Text = "";
+                txtMDPMembre.Text = "";
+            }
+        }
     }
 }
